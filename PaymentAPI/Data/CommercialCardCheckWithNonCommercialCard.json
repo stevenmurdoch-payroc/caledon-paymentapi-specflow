@@ -1,0 +1,7 @@
+{
+  "terminal_id":"BPQATEST",
+  "transaction_type":"card_commercial_card_check",
+  "card_information":{
+    "card_number":"6011000993043615"
+  }
+}

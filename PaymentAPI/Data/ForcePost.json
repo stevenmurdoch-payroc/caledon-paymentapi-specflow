@@ -1,0 +1,14 @@
+{
+  "terminal_id":"BPQATEST",
+  "transaction_type":"card_force_post",
+  "reference":"FORCEPOST-EXAMPLE",
+  "payment":{
+    "amount":1000,
+    "authorization_code":"T75644"
+  },
+  "card_information":{
+    "card_number":"4111111111111111",
+    "expiry_year":2019,
+    "expiry_month":3
+  }
+}

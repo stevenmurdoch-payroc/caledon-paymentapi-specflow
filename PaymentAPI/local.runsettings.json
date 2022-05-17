@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RunSettings>
+<RunConfiguration>
+<EnvironmentVariables>
+<API_URL>https://web-dev.caledoncard.com/api/payment</API_URL>
+</EnvironmentVariables>
+</RunConfiguration>
+
+<TestRunParameters>
+
+</TestRunParameters>
+</RunSettings>

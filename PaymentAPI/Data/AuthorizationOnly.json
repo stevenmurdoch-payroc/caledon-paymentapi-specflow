@@ -1,0 +1,13 @@
+{
+  "terminal_id":"BPQATEST",
+  "transaction_type":"card_authorization_only",
+  "reference":"AUTHONLY-EXAMPLE-EXPIRED1",
+  "payment":{
+    "amount":1000
+  },
+  "card_information":{
+    "card_number":"4111111111111111",
+    "expiry_year":2019,
+    "expiry_month":4
+  }
+}

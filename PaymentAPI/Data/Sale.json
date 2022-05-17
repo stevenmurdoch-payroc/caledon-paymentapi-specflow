@@ -1,0 +1,14 @@
+{
+  "terminal_id": "BPQATEST",
+  "transaction_type": "card_sale",
+  "reference": "SpecFlowSale1",
+  "payment": {
+    "amount": 200,
+    "dynamic_dba": "ABC CO 659857458856"
+  },
+  "card_information": {
+    "card_number": "4111111111111111",
+    "expiry_year": 2023,
+    "expiry_month": 3
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "terminal_id":"BPQATEST",
+  "transaction_type":"card_preauthorization",
+  "reference":"SpecFlowSaleWithToken",
+  "payment":{
+    "amount":100
+  },
+  "token":{
+    "token":"DEMOKTOKEN11"
+  }
+}

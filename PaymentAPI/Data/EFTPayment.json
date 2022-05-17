@@ -1,0 +1,15 @@
+{
+  "terminal_id":"BPQATEST",
+  "client_id":"client-id",
+  "transaction_type":"eft_payment",
+  "charge_description":"EFTPAY-DESC",
+  "reference_number":"EFTPAY-TUES4100",
+  "amount":1200,
+  "bank_number":"001",
+  "branch_number":"00123",
+  "account_number":"1234567",
+  "merchant_bank_number":"001",
+  "merchant_branch_number":"00123",
+  "merchant_account_number":"1234567",
+  "effective_date":"2010-13-87"
+}

@@ -1,0 +1,13 @@
+{
+  "terminal_id":"BPQATEST",
+  "transaction_type":"card_sale",
+  "reference":"SALE-EXAMPLE-REJ-INVL-CARD",
+  "payment":{
+    "amount":125
+  },
+  "card_information":{
+    "card_number":"1111111111111111",
+    "expiry_year":2019,
+    "expiry_month":3
+  }
+}

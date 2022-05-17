@@ -1,0 +1,13 @@
+{
+  "terminal_id":"BPQATEST",
+  "transaction_type":"token_add",
+  "bank_information":{
+    "bank_number":"001",
+    "branch_number":"12345",
+    "account_number":"1234567"
+  },
+  "token":{
+    "token":"SpecFlowToken1",
+    "reference":"JSMITH-BANKINFO-REF"
+  }
+}

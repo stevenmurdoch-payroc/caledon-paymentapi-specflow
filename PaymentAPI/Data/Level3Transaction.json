@@ -1,0 +1,29 @@
+{
+  "terminal_id":"BPQATEST",
+  "transaction_type":"card_sale",
+  "reference":"L2L3-SALE-EXAMPLE",
+  "payment":{
+    "amount":10235
+  },
+  "token":{
+    "token":"BPQATEST"
+  },
+  "invoice":{
+    "version":"PC3.02",
+    "invoice_reference":"INV1234",
+    "customer_name":"ABC COMPANY",
+    "invoice_total":10235,
+    "pst_rate":0,
+    "gst_rate":1300,
+    "pst_amount":0,
+    "gst_amount":1177,
+    "customer_po_number":"PO123569",
+    "order_date":20120914,
+    "line_item_count":1,
+    "requester_buyer_name":"REQBUY JSMITH",
+    "customer_reference":"REF1234",
+    "invoice_number":"INV1234",
+    "ship_to_prov_state":"ON",
+    "ship_to_postal_code":"L9K9K9"
+  }
+}

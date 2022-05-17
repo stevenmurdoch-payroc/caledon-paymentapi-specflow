@@ -1,0 +1,9 @@
+{
+  "terminal_id":"BPQATEST",
+  "batch_type":"PAD",
+  "client_id":"client-id",
+  "transaction_type":"pad_refund_void",
+  "charge_description":"DEBIT-DESC",
+  "reference_number":"SPACE017",
+  "amount":100
+}

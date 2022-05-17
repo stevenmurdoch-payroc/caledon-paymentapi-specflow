@@ -1,0 +1,8 @@
+{
+  "terminal_id":"BPQATEST",
+  "transaction_type":"token_update",
+  "token":{
+    "token":"SpecFlowToken1",
+    "reference":"TEST-CHANGE-1"
+  }
+}

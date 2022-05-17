@@ -1,0 +1,14 @@
+{
+  "terminal_id":"BPQATEST",
+  "transaction_type":"card_sale",
+  "reference":"SALE-EXAMPLE-REJ-DECLINE",
+  "payment":{
+    "amount":2204
+  },
+  "card_information":{
+    "card_number":"4111111111111111",
+    "expiry_year":2022,
+    "expiry_month":4
+  }
+}
+

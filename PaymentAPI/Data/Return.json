@@ -1,0 +1,13 @@
+{
+  "terminal_id":"BPQATEST",
+  "transaction_type":"card_return",
+  "reference":"SpecFlowSale1",
+  "payment":{
+    "amount":200
+  },
+  "card_information":{
+    "card_number":"5189819811111111",
+    "expiry_year":2019,
+    "expiry_month":3
+  }
+}

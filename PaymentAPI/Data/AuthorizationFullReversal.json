@@ -1,0 +1,8 @@
+{
+  "terminal_id":"BPQATEST",
+  "transaction_type":"card_authorization_reversal",
+  "reference":"FULLREVERSAL",
+  "payment":{
+    "amount":0
+  }
+}

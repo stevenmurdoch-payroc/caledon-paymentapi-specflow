@@ -1,0 +1,19 @@
+{
+  "terminal_id":"BPQATEST",
+  "transaction_type":"schedule_add",
+  "payment":{
+    "amount":500
+  },
+  "card_information": {
+    "card_number": "5189810011111111",
+    "expiry_year": 2019,
+    "expiry_month": 3
+  },
+  "schedule":{
+    "type":"MONTHLY",
+    "frequency":2,
+    "reference":"DEMOTOKEN11",
+    "number_of_payments":6,
+    "start_date":20210707
+  }
+}

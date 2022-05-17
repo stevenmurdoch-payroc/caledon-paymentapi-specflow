@@ -1,0 +1,14 @@
+{
+  "terminal_id":"BPQATEST",
+  "client_id":"client-id",
+  "transaction_type":"pad_account_verify",
+  "charge_description":"ACCTVER-DESC",
+  "reference_number":"SpecPrep1",
+  "amount":1,
+  "bank_number":"001",
+  "branch_number":"00123",
+  "account_number":"1234567",
+  "merchant_bank_number":"001",
+  "merchant_branch_number":"00123",
+  "merchant_account_number":"1234567"
+}

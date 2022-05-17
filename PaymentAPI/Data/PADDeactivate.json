@@ -1,0 +1,7 @@
+{
+  "terminal_id":"BPQATEST",
+  "transaction_type":"token_deactivate",
+  "token":{
+    "token":"SpecFlowToken1"
+  }
+}
