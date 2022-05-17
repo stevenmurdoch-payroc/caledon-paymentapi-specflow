@@ -69,10 +69,11 @@ public sealed class APIRequestStepDef
 
 
     [Given(@"the message is encrypted in hMac256")]
-    public void GivenTheMessageIsEncryptedInHMac()
+    public void GivenTheMessageIsEncryptedWithHMAC256()
     {
         var hMacHash = new HMacHash(_scenarioContext["API_KEY"].ToString(), _scenarioContext["payload"].ToString());
-        var hash = hMacHash.ComputeHash();
+        
+        _scenarioContext["X-Message-Hash"] = hMacHash.ComputeHash();;
     }
     
     

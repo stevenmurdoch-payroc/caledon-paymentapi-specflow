@@ -2,10 +2,7 @@
 
     Scenario: Perform a Sale Transaction
 		
-        Given the user attempts to connect to the Payment API
-	    Given the user prepares the "Sale.json" payload 
-        And the message is encrypted in hMac256
-        And the user has a valid jwt token and unique idempotency key        
+        Given the user prepares the Payment API "Sale" request       
         When a POST request is performed
         Then the response code will be response code '200'
         

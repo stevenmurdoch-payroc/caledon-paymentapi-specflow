@@ -58,8 +58,8 @@ public class RequestDriver
 
         request.AddHeader("Content-Type", "application/json");
         request.AddHeader("Accept", "application/json");
-        request.AddHeader("Authorization", $"Bearer {_scenarioContext["Jwt"]}");
-        request.AddHeader("Idempotency-Key", (Guid)_scenarioContext["idempotencyKey"]);
+        request.AddHeader("X-User-ID", (string)_scenarioContext["API_USER_ID"]);
+        request.AddHeader("X-Message-Hash", (string)_scenarioContext["X-Message-Hash"]);
 
         return request;
     }
