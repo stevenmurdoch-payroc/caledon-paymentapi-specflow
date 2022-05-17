@@ -28,9 +28,6 @@
     </ItemGroup>
 
     <ItemGroup>
-      <Compile Include="..\..\..\Downloads\pyrc-api-core-feature-uapi\test\component\Common.Specs\Hooks\Hook.cs">
-        <Link>Hooks\Hook.cs</Link>
-      </Compile>
       <Compile Update="Features\PADandEFTtransactions.feature.cs">
         <DependentUpon>PadTransactions.feature</DependentUpon>
         <AutoGen>true</AutoGen>
