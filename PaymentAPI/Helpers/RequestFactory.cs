@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using PaymentAPI.Drivers;
 using System.Collections.Generic;
 using RestSharp;

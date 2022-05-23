@@ -1,4 +1,4 @@
-﻿namespace Common.Specs.Helpers;
+namespace Common.Specs.Helpers;
 
 public class JSONData : RecipientJSON
 {

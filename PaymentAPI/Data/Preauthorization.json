@@ -2,11 +2,12 @@
   "terminal_id":"BPQATEST",
   "transaction_type":"card_preauthorization",
   "reference":"SpecFlowPreAuth1",
+  "echo_data":"MY ECHO-DATA 1",
   "payment":{
     "amount":1000
   },
   "card_information":{
-    "card_number":"5160849911111111",
+    "card_number":"4111111111111111",
     "expiry_year":2019,
     "expiry_month":3
   }

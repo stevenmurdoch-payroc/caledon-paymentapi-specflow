@@ -15,7 +15,6 @@ using Common.Specs.ValueComparers;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 using PaymentAPI.Helpers;
-using PaymentAPI.Specs.Helpers;
 using RestSharp.Serializers;
 
 namespace PaymentAPI.Steps;
@@ -56,7 +55,7 @@ public sealed class CommonStepDef
     public void GivenTheUserHasAValidJwtToken()
     {
         var isvId = (string)_scenarioContext["IsvId"];
-        _scenarioContext["Jwt"] = Jwt.GenerateToken(isvId, true);
+        //_scenarioContext["Jwt"] = Jwt.GenerateToken(isvId, true);
     }
 
     [Given(@"the user has a fresh idempotency key")]
@@ -106,9 +105,9 @@ public sealed class CommonStepDef
             Service.Instance.ValueComparers.Register<StringWildcardComparer>();
         
         var response = (RestResponse)_scenarioContext["APIResponse"];
-        var problemDetails = JsonConvert.DeserializeObject<ProblemDetailsJSON>(response.Content);
+        //var problemDetails = JsonConvert.DeserializeObject<ProblemDetailsJSON>(response.Content);
             
-        table.CompareToInstance(problemDetails);
+        //table.CompareToInstance(problemDetails);
     }
     
     [Then(@"the list of errors will contain")]
@@ -139,6 +138,19 @@ public sealed class CommonStepDef
         JObject payload = JObject.Parse(File.ReadAllText(path));
         _scenarioContext["payload"] = payload;
     }
+    
+    [Given(@"the user prepares the Pad ""(.*)"" payload")]
+    [When(@"the user prepares the Pad ""(.*)"" payload")]
+    public void TheUserPreparesThePadPayload(string fileName)
+    {
+        // load file into scenarioContext["payload"] attribute
+        string path = Path.Combine(Directory.GetParent(Directory.GetCurrentDirectory()).Parent.Parent.FullName + "/Data", fileName);
+        
+        JObject payload = JObject.Parse(File.ReadAllText(path));
+        Random rnd = new Random();
+        int reference_number  = rnd.Next(1, 10000);
+        _scenarioContext["payload"] = payload;
+    }
 
     [When(@"the user provides the additional headers")]
     public void TheUserProvidesTheHeaders(Table table)
@@ -159,10 +171,10 @@ public sealed class CommonStepDef
     public void TheUserAddsTheFollowingFundAccAttributes(Table table)
     {
         var payload = (JObject) _scenarioContext["payload"];
-        var updateDataTable = table.CreateSet<FundingAccountJSON>().First();
-        var fundingPayLoad = JObject.Parse(JsonConvert.SerializeObject(updateDataTable));
+        //var updateDataTable = table.CreateSet<FundingAccountJSON>().First();
+        //var fundingPayLoad = JObject.Parse(JsonConvert.SerializeObject(updateDataTable));
         JArray data = payload.SelectToken("fundingAccounts") as JArray;
-        data.Add(fundingPayLoad);
+        //data.Add(fundingPayLoad);
         _scenarioContext["payload"] = payload;
     }
     

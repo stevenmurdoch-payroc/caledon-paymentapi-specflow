@@ -1,12 +1,12 @@
 {
   "terminal_id":"BPQATEST",
   "transaction_type":"card_sale",
-  "reference":"L2L3-SALE-EXAMPLE",
+  "reference":"L2L3-SALE-EXAMPLE-TEST4",
   "payment":{
     "amount":10235
   },
   "token":{
-    "token":"BPQATEST"
+    "token":"DEMOTOKEN11"
   },
   "invoice":{
     "version":"PC3.02",

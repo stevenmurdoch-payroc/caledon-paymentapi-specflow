@@ -32,5 +32,4 @@ public class TransactionStepDef
         int numericResponse = (int) response.StatusCode;
         numericResponse.Should().Be(checkStatus);
     }
-
 }

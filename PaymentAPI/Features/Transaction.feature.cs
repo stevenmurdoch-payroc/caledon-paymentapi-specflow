@@ -130,18 +130,12 @@ namespace PaymentAPI.Features
             {
                 this.ScenarioStart();
 #line 11
-  testRunner.Given("the user attempts to connect to the Payment API", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+  testRunner.Given("the user prepares the Payment API \"AccountStatus\" request", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
 #line 12
-  testRunner.And("the user has a valid jwt token and unique idempotency key", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+  testRunner.When("a POST request is performed", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
 #line 13
-  testRunner.When("the user prepares the \"AccountStatus.json\" payload", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
-#line hidden
-#line 14
-  testRunner.And("a POST request is performed", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line hidden
-#line 15
   testRunner.Then("the response code will be response code \'200\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             }
@@ -156,7 +150,7 @@ namespace PaymentAPI.Features
             string[] tagsOfScenario = ((string[])(null));
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Perform a Auth Only Transaction with Resend Flag", null, tagsOfScenario, argumentsOfScenario, featureTags);
-#line 17
+#line 15
  this.ScenarioInitialize(scenarioInfo);
 #line hidden
             if ((TagHelper.ContainsIgnoreTag(tagsOfScenario) || TagHelper.ContainsIgnoreTag(featureTags)))
@@ -166,22 +160,16 @@ namespace PaymentAPI.Features
             else
             {
                 this.ScenarioStart();
+#line 17
+  testRunner.Given("a \"Sale\" transaction has been performed", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+#line hidden
+#line 18
+  testRunner.And("the user prepares the Payment API \"AuthOnlyWithResendFlag\" request", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line hidden
 #line 19
-  testRunner.Given("a \"Sale.json\" transaction is performed", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+  testRunner.When("a POST request is performed", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
 #line 20
-  testRunner.And("the user attempts to connect to the Payment API", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line hidden
-#line 21
-  testRunner.And("the user has a valid jwt token and unique idempotency key", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line hidden
-#line 22
-  testRunner.When("the user prepares the \"AuthOnlyWithResendFlag.json\" payload", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
-#line hidden
-#line 23
-  testRunner.And("a POST request is performed", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line hidden
-#line 24
   testRunner.Then("the response code will be response code \'200\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             }
@@ -196,7 +184,7 @@ namespace PaymentAPI.Features
             string[] tagsOfScenario = ((string[])(null));
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Perform a Authorization Only Transaction", null, tagsOfScenario, argumentsOfScenario, featureTags);
-#line 26
+#line 23
  this.ScenarioInitialize(scenarioInfo);
 #line hidden
             if ((TagHelper.ContainsIgnoreTag(tagsOfScenario) || TagHelper.ContainsIgnoreTag(featureTags)))
@@ -206,19 +194,13 @@ namespace PaymentAPI.Features
             else
             {
                 this.ScenarioStart();
-#line 28
-  testRunner.Given("the user attempts to connect to the Payment API", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+#line 25
+  testRunner.Given("the user prepares the Payment API \"AuthorizationOnly\" request", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
-#line 29
-  testRunner.And("the user has a valid jwt token and unique idempotency key", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line 26
+  testRunner.When("a POST request is performed", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
-#line 30
-  testRunner.When("the user prepares the \"AuthorizationOnly.json\" payload", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
-#line hidden
-#line 31
-  testRunner.And("a POST request is performed", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line hidden
-#line 32
+#line 27
   testRunner.Then("the response code will be response code \'200\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             }
@@ -233,7 +215,7 @@ namespace PaymentAPI.Features
             string[] tagsOfScenario = ((string[])(null));
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Perform a Auth Only Partial Reversal Transaction", null, tagsOfScenario, argumentsOfScenario, featureTags);
-#line 34
+#line 29
  this.ScenarioInitialize(scenarioInfo);
 #line hidden
             if ((TagHelper.ContainsIgnoreTag(tagsOfScenario) || TagHelper.ContainsIgnoreTag(featureTags)))
@@ -243,34 +225,16 @@ namespace PaymentAPI.Features
             else
             {
                 this.ScenarioStart();
-#line 35
-  testRunner.Given("the user attempts to connect to the Payment API", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+#line 31
+  testRunner.Given("a \"PreAuthorization\" transaction has been performed", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
-#line 36
-  testRunner.And("the user has a valid jwt token and unique idempotency key", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line 32
+  testRunner.And("the user prepares the Payment API \"AuthorizationPartialReversal\" request", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
-#line 37
-  testRunner.When("the user prepares the \"SaleWithToken.json\" payload", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line 33
+  testRunner.When("a POST request is performed", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
-#line 38
-  testRunner.And("a POST request is performed", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line hidden
-#line 39
-  testRunner.Then("the response code will be response code \'200\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
-#line hidden
-#line 40
-  testRunner.Given("the user attempts to connect to the Payment API", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
-#line hidden
-#line 41
-  testRunner.And("the user has a valid jwt token and unique idempotency key", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line hidden
-#line 42
-  testRunner.When("the user prepares the \"AuthorizationPartialReversal.json\" payload", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
-#line hidden
-#line 43
-  testRunner.And("a POST request is performed", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line hidden
-#line 44
+#line 34
   testRunner.Then("the response code will be response code \'200\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             }
@@ -285,7 +249,7 @@ namespace PaymentAPI.Features
             string[] tagsOfScenario = ((string[])(null));
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Perform a Commercial Card Check with a Commercial Card", null, tagsOfScenario, argumentsOfScenario, featureTags);
-#line 46
+#line 36
  this.ScenarioInitialize(scenarioInfo);
 #line hidden
             if ((TagHelper.ContainsIgnoreTag(tagsOfScenario) || TagHelper.ContainsIgnoreTag(featureTags)))
@@ -295,19 +259,14 @@ namespace PaymentAPI.Features
             else
             {
                 this.ScenarioStart();
-#line 48
-  testRunner.Given("the user attempts to connect to the Payment API", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+#line 38
+  testRunner.Given("the user prepares the Payment API \"CommercialCardCheckWithCommercialCard\" request" +
+                        "", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
-#line 49
-  testRunner.And("the user has a valid jwt token and unique idempotency key", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line 39
+  testRunner.When("a POST request is performed", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
-#line 50
-  testRunner.When("the user prepares the \"CommercialCardCheckWithCommercialCard.json\" payload", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
-#line hidden
-#line 51
-  testRunner.And("a POST request is performed", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line hidden
-#line 52
+#line 40
   testRunner.Then("the response code will be response code \'200\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             }
@@ -322,7 +281,7 @@ namespace PaymentAPI.Features
             string[] tagsOfScenario = ((string[])(null));
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Perform a Commercial Card Check with a Non Commercial Card", null, tagsOfScenario, argumentsOfScenario, featureTags);
-#line 54
+#line 42
  this.ScenarioInitialize(scenarioInfo);
 #line hidden
             if ((TagHelper.ContainsIgnoreTag(tagsOfScenario) || TagHelper.ContainsIgnoreTag(featureTags)))
@@ -332,20 +291,15 @@ namespace PaymentAPI.Features
             else
             {
                 this.ScenarioStart();
-#line 56
-  testRunner.Given("the user attempts to connect to the Payment API", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+#line 44
+  testRunner.Given("the user prepares the Payment API \"CommercialCardCheckWithNonCommercialCard\" requ" +
+                        "est", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
-#line 57
-  testRunner.And("the user has a valid jwt token and unique idempotency key", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line 45
+  testRunner.When("a POST request is performed", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
-#line 58
-  testRunner.When("the user prepares the \"CommercialCardCheckWithNonCommercialCard.json\" payload", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
-#line hidden
-#line 59
-  testRunner.And("a POST request is performed", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line hidden
-#line 60
-  testRunner.Then("the response code will be response code \'200\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line 46
+  testRunner.Then("the response code will be response code \'400\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             }
             this.ScenarioCleanup();
@@ -359,7 +313,7 @@ namespace PaymentAPI.Features
             string[] tagsOfScenario = ((string[])(null));
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Perform a Completion Transaction", null, tagsOfScenario, argumentsOfScenario, featureTags);
-#line 62
+#line 48
  this.ScenarioInitialize(scenarioInfo);
 #line hidden
             if ((TagHelper.ContainsIgnoreTag(tagsOfScenario) || TagHelper.ContainsIgnoreTag(featureTags)))
@@ -369,34 +323,16 @@ namespace PaymentAPI.Features
             else
             {
                 this.ScenarioStart();
-#line 63
-  testRunner.Given("the user attempts to connect to the Payment API", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+#line 50
+  testRunner.Given("a \"PreAuthorization\" transaction has been performed", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
-#line 64
-  testRunner.And("the user has a valid jwt token and unique idempotency key", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line 51
+  testRunner.And("the user prepares the Payment API \"Completion\" request", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
-#line 65
-  testRunner.When("the user prepares the \"PreAuthorization.json\" payload", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line 52
+  testRunner.When("a POST request is performed", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
-#line 66
-  testRunner.And("a POST request is performed", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line hidden
-#line 67
-  testRunner.Then("the response code will be response code \'200\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
-#line hidden
-#line 68
-  testRunner.Given("the user attempts to connect to the Payment API", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
-#line hidden
-#line 69
-  testRunner.And("the user has a valid jwt token and unique idempotency key", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line hidden
-#line 70
-  testRunner.When("the user prepares the \"Completion.json\" payload", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
-#line hidden
-#line 71
-  testRunner.And("a POST request is performed", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line hidden
-#line 72
+#line 53
   testRunner.Then("the response code will be response code \'200\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             }
@@ -411,7 +347,7 @@ namespace PaymentAPI.Features
             string[] tagsOfScenario = ((string[])(null));
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Perform a Force Post Transaction", null, tagsOfScenario, argumentsOfScenario, featureTags);
-#line 74
+#line 55
  this.ScenarioInitialize(scenarioInfo);
 #line hidden
             if ((TagHelper.ContainsIgnoreTag(tagsOfScenario) || TagHelper.ContainsIgnoreTag(featureTags)))
@@ -421,19 +357,13 @@ namespace PaymentAPI.Features
             else
             {
                 this.ScenarioStart();
-#line 76
-  testRunner.Given("the user attempts to connect to the Payment API", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+#line 57
+  testRunner.Given("the user prepares the Payment API \"ForcePost\" request", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
-#line 77
-  testRunner.And("the user has a valid jwt token and unique idempotency key", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line 58
+  testRunner.When("a POST request is performed", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
-#line 78
-  testRunner.When("the user prepares the \"ForcePost.json\" payload", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
-#line hidden
-#line 79
-  testRunner.And("a POST request is performed", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line hidden
-#line 80
+#line 59
   testRunner.Then("the response code will be response code \'200\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             }
@@ -448,7 +378,7 @@ namespace PaymentAPI.Features
             string[] tagsOfScenario = ((string[])(null));
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Perform a Level 2 Sale Transaction", null, tagsOfScenario, argumentsOfScenario, featureTags);
-#line 82
+#line 61
  this.ScenarioInitialize(scenarioInfo);
 #line hidden
             if ((TagHelper.ContainsIgnoreTag(tagsOfScenario) || TagHelper.ContainsIgnoreTag(featureTags)))
@@ -458,34 +388,28 @@ namespace PaymentAPI.Features
             else
             {
                 this.ScenarioStart();
-#line 84
-  testRunner.Given("the user attempts to connect to the Payment API", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+#line 63
+  testRunner.Given("the user prepares the Payment API \"Level2Transaction\" request", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
-#line 85
-  testRunner.And("the user has a valid jwt token and unique idempotency key", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line 64
+  testRunner.When("a POST request is performed", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
-#line 86
-  testRunner.When("the user prepares the \"Level2Transaction.json\" payload", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
-#line hidden
-#line 87
-  testRunner.And("a POST request is performed", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line hidden
-#line 88
+#line 65
   testRunner.Then("the response code will be response code \'200\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             }
             this.ScenarioCleanup();
         }
         
-        [Xunit.SkippableFactAttribute(DisplayName="Perform a Level 3 Sale Transaction (//Unique L2 Code to be provided)")]
+        [Xunit.SkippableFactAttribute(DisplayName="Perform a Level 3 Sale Transaction (Visa Card)")]
         [Xunit.TraitAttribute("FeatureTitle", "Perform Payment API Transaction")]
-        [Xunit.TraitAttribute("Description", "Perform a Level 3 Sale Transaction (//Unique L2 Code to be provided)")]
-        public void PerformALevel3SaleTransactionUniqueL2CodeToBeProvided()
+        [Xunit.TraitAttribute("Description", "Perform a Level 3 Sale Transaction (Visa Card)")]
+        public void PerformALevel3SaleTransactionVisaCard()
         {
             string[] tagsOfScenario = ((string[])(null));
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Perform a Level 3 Sale Transaction (//Unique L2 Code to be provided)", null, tagsOfScenario, argumentsOfScenario, featureTags);
-#line 90
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Perform a Level 3 Sale Transaction (Visa Card)", null, tagsOfScenario, argumentsOfScenario, featureTags);
+#line 67
  this.ScenarioInitialize(scenarioInfo);
 #line hidden
             if ((TagHelper.ContainsIgnoreTag(tagsOfScenario) || TagHelper.ContainsIgnoreTag(featureTags)))
@@ -495,19 +419,13 @@ namespace PaymentAPI.Features
             else
             {
                 this.ScenarioStart();
-#line 92
-  testRunner.Given("the user attempts to connect to the Payment API", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+#line 69
+  testRunner.Given("the user prepares the Payment API \"Level3Transaction\" request", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
-#line 93
-  testRunner.And("the user has a valid jwt token and unique idempotency key", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line 70
+  testRunner.When("a POST request is performed", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
-#line 94
-  testRunner.When("the user prepares the \"Level3Transaction.json\" payload", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
-#line hidden
-#line 95
-  testRunner.And("a POST request is performed", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line hidden
-#line 96
+#line 71
   testRunner.Then("the response code will be response code \'200\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             }
@@ -522,7 +440,7 @@ namespace PaymentAPI.Features
             string[] tagsOfScenario = ((string[])(null));
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Perform a Pre Authorization Transaction", null, tagsOfScenario, argumentsOfScenario, featureTags);
-#line 98
+#line 73
  this.ScenarioInitialize(scenarioInfo);
 #line hidden
             if ((TagHelper.ContainsIgnoreTag(tagsOfScenario) || TagHelper.ContainsIgnoreTag(featureTags)))
@@ -532,19 +450,13 @@ namespace PaymentAPI.Features
             else
             {
                 this.ScenarioStart();
-#line 100
-  testRunner.Given("the user attempts to connect to the Payment API", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+#line 75
+  testRunner.Given("the user prepares the Payment API \"PreAuthorization\" request", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
-#line 101
-  testRunner.And("the user has a valid jwt token and unique idempotency key", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line 76
+  testRunner.When("a POST request is performed", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
-#line 102
-  testRunner.When("the user prepares the \"PreAuthorization.json\" payload", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
-#line hidden
-#line 103
-  testRunner.And("a POST request is performed", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line hidden
-#line 104
+#line 77
   testRunner.Then("the response code will be response code \'200\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             }
@@ -559,7 +471,7 @@ namespace PaymentAPI.Features
             string[] tagsOfScenario = ((string[])(null));
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Perform a Pre Authorization Transaction with a Token", null, tagsOfScenario, argumentsOfScenario, featureTags);
-#line 106
+#line 79
  this.ScenarioInitialize(scenarioInfo);
 #line hidden
             if ((TagHelper.ContainsIgnoreTag(tagsOfScenario) || TagHelper.ContainsIgnoreTag(featureTags)))
@@ -569,19 +481,13 @@ namespace PaymentAPI.Features
             else
             {
                 this.ScenarioStart();
-#line 108
-  testRunner.Given("the user attempts to connect to the Payment API", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+#line 81
+  testRunner.Given("the user prepares the Payment API \"PreAuthorizationWithToken\" request", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
-#line 109
-  testRunner.And("the user has a valid jwt token and unique idempotency key", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line 82
+  testRunner.When("a POST request is performed", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
-#line 110
-  testRunner.When("the user prepares the \"PreAuthorizationWithToken.json\" payload", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
-#line hidden
-#line 111
-  testRunner.And("a POST request is performed", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line hidden
-#line 112
+#line 83
   testRunner.Then("the response code will be response code \'200\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             }
@@ -596,7 +502,7 @@ namespace PaymentAPI.Features
             string[] tagsOfScenario = ((string[])(null));
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Perform a Rejected Sale Transaction", null, tagsOfScenario, argumentsOfScenario, featureTags);
-#line 114
+#line 85
  this.ScenarioInitialize(scenarioInfo);
 #line hidden
             if ((TagHelper.ContainsIgnoreTag(tagsOfScenario) || TagHelper.ContainsIgnoreTag(featureTags)))
@@ -606,19 +512,13 @@ namespace PaymentAPI.Features
             else
             {
                 this.ScenarioStart();
-#line 116
-  testRunner.Given("the user attempts to connect to the Payment API", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+#line 87
+  testRunner.Given("the user prepares the Payment API \"RejectedSale\" request", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
-#line 117
-  testRunner.And("the user has a valid jwt token and unique idempotency key", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line 88
+  testRunner.When("a POST request is performed", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
-#line 118
-  testRunner.When("the user prepares the \"RejectedSale.json\" payload", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
-#line hidden
-#line 119
-  testRunner.And("a POST request is performed", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line hidden
-#line 120
+#line 89
   testRunner.Then("the response code will be response code \'400\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             }
@@ -633,7 +533,7 @@ namespace PaymentAPI.Features
             string[] tagsOfScenario = ((string[])(null));
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Perform a Rejected Sale Transaction using invalid card number", null, tagsOfScenario, argumentsOfScenario, featureTags);
-#line 122
+#line 91
  this.ScenarioInitialize(scenarioInfo);
 #line hidden
             if ((TagHelper.ContainsIgnoreTag(tagsOfScenario) || TagHelper.ContainsIgnoreTag(featureTags)))
@@ -643,19 +543,13 @@ namespace PaymentAPI.Features
             else
             {
                 this.ScenarioStart();
-#line 124
-  testRunner.Given("the user attempts to connect to the Payment API", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+#line 93
+  testRunner.Given("the user prepares the Payment API \"RejectedSaleInvalidCardNumber\" request", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
-#line 125
-  testRunner.And("the user has a valid jwt token and unique idempotency key", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line 94
+  testRunner.When("a POST request is performed", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
-#line 126
-  testRunner.When("the user prepares the \"RejectedSaleInvalidCardNumber.json\" payload", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
-#line hidden
-#line 127
-  testRunner.And("a POST request is performed", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line hidden
-#line 128
+#line 95
   testRunner.Then("the response code will be response code \'400\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             }
@@ -670,7 +564,7 @@ namespace PaymentAPI.Features
             string[] tagsOfScenario = ((string[])(null));
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Perform a Return Transaction", null, tagsOfScenario, argumentsOfScenario, featureTags);
-#line 130
+#line 98
  this.ScenarioInitialize(scenarioInfo);
 #line hidden
             if ((TagHelper.ContainsIgnoreTag(tagsOfScenario) || TagHelper.ContainsIgnoreTag(featureTags)))
@@ -680,43 +574,19 @@ namespace PaymentAPI.Features
             else
             {
                 this.ScenarioStart();
-#line 131
-  testRunner.Given("the user attempts to connect to the Payment API", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+#line 100
+  testRunner.Given("a \"Sale\" transaction has been performed", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
-#line 132
-  testRunner.And("the user has a valid jwt token and unique idempotency key", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line 101
+  testRunner.And("a \"Settlement\" transaction has been performed", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
-#line 133
-  testRunner.When("the user prepares the \"Sale.json\" payload", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line 102
+  testRunner.And("the user prepares the Payment API \"Return\" request", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
-#line 134
-  testRunner.And("a POST request is performed", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line 103
+  testRunner.When("a POST request is performed", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
-#line 135
-  testRunner.Given("the user attempts to connect to the Payment API", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
-#line hidden
-#line 136
-  testRunner.And("the user has a valid jwt token and unique idempotency key", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line hidden
-#line 137
-  testRunner.When("the user prepares the \"Settlement.json\" payload", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
-#line hidden
-#line 138
-  testRunner.And("a POST request is performed", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line hidden
-#line 139
-  testRunner.Given("the user attempts to connect to the Payment API", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
-#line hidden
-#line 140
-  testRunner.And("the user has a valid jwt token and unique idempotency key", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line hidden
-#line 141
-  testRunner.When("the user prepares the \"Return.json\" payload", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
-#line hidden
-#line 142
-  testRunner.And("a POST request is performed", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line hidden
-#line 143
+#line 104
   testRunner.Then("the response code will be response code \'200\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             }
@@ -731,7 +601,7 @@ namespace PaymentAPI.Features
             string[] tagsOfScenario = ((string[])(null));
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Perform a Sale Transaction using a token", null, tagsOfScenario, argumentsOfScenario, featureTags);
-#line 146
+#line 107
  this.ScenarioInitialize(scenarioInfo);
 #line hidden
             if ((TagHelper.ContainsIgnoreTag(tagsOfScenario) || TagHelper.ContainsIgnoreTag(featureTags)))
@@ -741,34 +611,28 @@ namespace PaymentAPI.Features
             else
             {
                 this.ScenarioStart();
-#line 148
-  testRunner.Given("the user attempts to connect to the Payment API", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+#line 109
+  testRunner.Given("the user prepares the Payment API \"SaleWithToken\" request", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
-#line 149
-  testRunner.And("the user has a valid jwt token and unique idempotency key", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line 110
+  testRunner.When("a POST request is performed", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
-#line 150
-  testRunner.When("the user prepares the \"SaleWithToken.json\" payload", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
-#line hidden
-#line 151
-  testRunner.And("a POST request is performed", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line hidden
-#line 152
+#line 111
   testRunner.Then("the response code will be response code \'200\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             }
             this.ScenarioCleanup();
         }
         
-        [Xunit.SkippableFactAttribute(DisplayName="Perform a Scheduled Transaction")]
+        [Xunit.SkippableFactAttribute(DisplayName="Perform a Scheduled Transaction (\'Create new Token each time?\')")]
         [Xunit.TraitAttribute("FeatureTitle", "Perform Payment API Transaction")]
-        [Xunit.TraitAttribute("Description", "Perform a Scheduled Transaction")]
-        public void PerformAScheduledTransaction()
+        [Xunit.TraitAttribute("Description", "Perform a Scheduled Transaction (\'Create new Token each time?\')")]
+        public void PerformAScheduledTransactionCreateNewTokenEachTime()
         {
             string[] tagsOfScenario = ((string[])(null));
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Perform a Scheduled Transaction", null, tagsOfScenario, argumentsOfScenario, featureTags);
-#line 154
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Perform a Scheduled Transaction (\'Create new Token each time?\')", null, tagsOfScenario, argumentsOfScenario, featureTags);
+#line 113
  this.ScenarioInitialize(scenarioInfo);
 #line hidden
             if ((TagHelper.ContainsIgnoreTag(tagsOfScenario) || TagHelper.ContainsIgnoreTag(featureTags)))
@@ -778,19 +642,13 @@ namespace PaymentAPI.Features
             else
             {
                 this.ScenarioStart();
-#line 156
-  testRunner.Given("the user attempts to connect to the Payment API", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+#line 115
+  testRunner.Given("the user prepares the Payment API \"Schedule\" request", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
-#line 157
-  testRunner.And("the user has a valid jwt token and unique idempotency key", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line 116
+  testRunner.When("a POST request is performed", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
-#line 158
-  testRunner.When("the user prepares the \"Schedule.json\" payload", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
-#line hidden
-#line 159
-  testRunner.And("a POST request is performed", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line hidden
-#line 160
+#line 117
   testRunner.Then("the response code will be response code \'200\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             }
@@ -805,7 +663,7 @@ namespace PaymentAPI.Features
             string[] tagsOfScenario = ((string[])(null));
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Perform a Settlement Transaction", null, tagsOfScenario, argumentsOfScenario, featureTags);
-#line 162
+#line 119
  this.ScenarioInitialize(scenarioInfo);
 #line hidden
             if ((TagHelper.ContainsIgnoreTag(tagsOfScenario) || TagHelper.ContainsIgnoreTag(featureTags)))
@@ -815,34 +673,16 @@ namespace PaymentAPI.Features
             else
             {
                 this.ScenarioStart();
-#line 164
-  testRunner.Given("the user attempts to connect to the Payment API", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+#line 121
+  testRunner.Given("a \"SaleWithToken\" transaction has been performed", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
-#line 165
-  testRunner.And("the user has a valid jwt token and unique idempotency key", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line 122
+  testRunner.And("the user prepares the Payment API \"Settlement\" request", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
-#line 166
-  testRunner.When("the user prepares the \"SaleWithToken.json\" payload", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line 123
+  testRunner.When("a POST request is performed", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
-#line 167
-  testRunner.And("a POST request is performed", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line hidden
-#line 168
-  testRunner.Then("the response code will be response code \'200\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
-#line hidden
-#line 169
-  testRunner.Given("the user attempts to connect to the Payment API", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
-#line hidden
-#line 170
-  testRunner.And("the user has a valid jwt token and unique idempotency key", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line hidden
-#line 171
-  testRunner.When("the user prepares the \"Settlement.json\" payload", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
-#line hidden
-#line 172
-  testRunner.And("a POST request is performed", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line hidden
-#line 173
+#line 124
   testRunner.Then("the response code will be response code \'200\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             }
@@ -857,7 +697,7 @@ namespace PaymentAPI.Features
             string[] tagsOfScenario = ((string[])(null));
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Perform a Void Transaction", null, tagsOfScenario, argumentsOfScenario, featureTags);
-#line 175
+#line 126
  this.ScenarioInitialize(scenarioInfo);
 #line hidden
             if ((TagHelper.ContainsIgnoreTag(tagsOfScenario) || TagHelper.ContainsIgnoreTag(featureTags)))
@@ -867,31 +707,16 @@ namespace PaymentAPI.Features
             else
             {
                 this.ScenarioStart();
-#line 177
-  testRunner.Given("the user attempts to connect to the Payment API", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+#line 128
+  testRunner.Given("a \"Sale\" transaction has been performed", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
-#line 178
-  testRunner.And("the user has a valid jwt token and unique idempotency key", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line 129
+  testRunner.And("the user prepares the Payment API \"Void\" request", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
-#line 179
-  testRunner.When("the user prepares the \"Sale.json\" payload", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line 130
+  testRunner.When("a POST request is performed", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
-#line 180
-  testRunner.And("a POST request is performed", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line hidden
-#line 181
-  testRunner.Given("the user attempts to connect to the Payment API", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
-#line hidden
-#line 182
-  testRunner.And("the user has a valid jwt token and unique idempotency key", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line hidden
-#line 183
-  testRunner.When("the user prepares the \"Void.json\" payload", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
-#line hidden
-#line 184
-  testRunner.And("a POST request is performed", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line hidden
-#line 185
+#line 131
   testRunner.Then("the response code will be response code \'200\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             }
@@ -906,7 +731,7 @@ namespace PaymentAPI.Features
             string[] tagsOfScenario = ((string[])(null));
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Perform a Return Void Transaction", null, tagsOfScenario, argumentsOfScenario, featureTags);
-#line 187
+#line 133
  this.ScenarioInitialize(scenarioInfo);
 #line hidden
             if ((TagHelper.ContainsIgnoreTag(tagsOfScenario) || TagHelper.ContainsIgnoreTag(featureTags)))
@@ -916,43 +741,19 @@ namespace PaymentAPI.Features
             else
             {
                 this.ScenarioStart();
-#line 189
-  testRunner.Given("the user attempts to connect to the Payment API", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+#line 135
+  testRunner.Given("a \"Sale\" transaction has been performed", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
-#line 190
-  testRunner.And("the user has a valid jwt token and unique idempotency key", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line 136
+  testRunner.And("a \"Void\" transaction has been performed", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
-#line 191
-  testRunner.When("the user prepares the \"Sale.json\" payload", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line 137
+  testRunner.And("the user prepares the Payment API \"ReturnVoid\" request", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
-#line 192
-  testRunner.And("a POST request is performed", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line 138
+  testRunner.When("a POST request is performed", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
-#line 193
-  testRunner.Given("the user attempts to connect to the Payment API", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
-#line hidden
-#line 194
-  testRunner.And("the user has a valid jwt token and unique idempotency key", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line hidden
-#line 195
-  testRunner.When("the user prepares the \"Void.json\" payload", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
-#line hidden
-#line 196
-  testRunner.And("a POST request is performed", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line hidden
-#line 197
-  testRunner.Given("the user attempts to connect to the Payment API", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
-#line hidden
-#line 198
-  testRunner.And("the user has a valid jwt token and unique idempotency key", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line hidden
-#line 199
-  testRunner.When("the user prepares the \"ReturnVoid.json\" payload", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
-#line hidden
-#line 200
-  testRunner.And("a POST request is performed", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line hidden
-#line 201
+#line 139
   testRunner.Then("the response code will be response code \'200\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             }

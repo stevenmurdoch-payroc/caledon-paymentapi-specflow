@@ -1,4 +1,4 @@
-﻿using System.Collections;
+using System.Collections;
 using Common.Specs.Helpers;
 using Newtonsoft.Json;
 

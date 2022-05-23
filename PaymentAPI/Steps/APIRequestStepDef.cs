@@ -25,7 +25,7 @@ public sealed class APIRequestStepDef
         _commonSteps = new CommonStepDef(scenarioContext, _requestDriver);
     }
 
-    
+
     [When(@"a POST request is performed")]
     public async Task WhenAPostRequestIsPerformed()
     {
@@ -72,9 +72,8 @@ public sealed class APIRequestStepDef
     public void GivenTheMessageIsEncryptedWithHMAC256()
     {
         var hMacHash = new HMacHash(_scenarioContext["API_KEY"].ToString(), _scenarioContext["payload"].ToString());
-        
-        _scenarioContext["X-Message-Hash"] = hMacHash.ComputeHash();;
+
+        _scenarioContext["X-Message-Hash"] = hMacHash.ComputeHash();
+        ;
     }
-    
-    
 }
