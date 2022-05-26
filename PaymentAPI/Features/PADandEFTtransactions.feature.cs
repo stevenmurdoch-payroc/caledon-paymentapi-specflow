@@ -133,7 +133,7 @@ namespace PaymentAPI.Features
   testRunner.Given("a \"PADDebit\" transaction has been performed", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
 #line 12
-  testRunner.And("the user prepares the Payment API \"PADDebitVoid\" request", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+  testRunner.And("the user prepares the PAD API \"PADDebitVoid\" request", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
 #line 13
   testRunner.When("a POST request is performed", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
@@ -145,17 +145,14 @@ namespace PaymentAPI.Features
             this.ScenarioCleanup();
         }
         
-        [Xunit.SkippableFactAttribute(DisplayName="Perform a PAD Account Verification Transaction  (Unique Reference Number Required" +
-            ")")]
+        [Xunit.SkippableFactAttribute(DisplayName="Perform a PAD Account Verification Transaction")]
         [Xunit.TraitAttribute("FeatureTitle", "Perform PAD/EFT Transactions")]
-        [Xunit.TraitAttribute("Description", "Perform a PAD Account Verification Transaction  (Unique Reference Number Required" +
-            ")")]
-        public void PerformAPADAccountVerificationTransactionUniqueReferenceNumberRequired()
+        [Xunit.TraitAttribute("Description", "Perform a PAD Account Verification Transaction")]
+        public void PerformAPADAccountVerificationTransaction()
         {
             string[] tagsOfScenario = ((string[])(null));
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Perform a PAD Account Verification Transaction  (Unique Reference Number Required" +
-                    ")", null, tagsOfScenario, argumentsOfScenario, featureTags);
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Perform a PAD Account Verification Transaction", null, tagsOfScenario, argumentsOfScenario, featureTags);
 #line 16
  this.ScenarioInitialize(scenarioInfo);
 #line hidden
@@ -232,10 +229,10 @@ namespace PaymentAPI.Features
   testRunner.Given("a \"PADDebit\" transaction has been performed", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
 #line 31
-  testRunner.And("a \"Settlement\" transaction has been performed", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+  testRunner.Given("a \"Settlement\" transaction has been performed", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
 #line 32
-  testRunner.And("the user prepares the Payment API \"PADRefund\" request", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+  testRunner.And("the user prepares the PAD API \"PADRefund\" request", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
 #line 33
   testRunner.When("a POST request is performed", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
@@ -247,17 +244,17 @@ namespace PaymentAPI.Features
             this.ScenarioCleanup();
         }
         
-        [Xunit.SkippableFactAttribute(DisplayName="Perform an PAD Refund Void Transaction  (Unique Reference Number Required then re" +
-            "used)")]
+        [Xunit.SkippableFactAttribute(DisplayName="Perform an PAD Refund Void Transaction  (PADRefundVoid needs new bdd and pre-pre-" +
+            "ref?)")]
         [Xunit.TraitAttribute("FeatureTitle", "Perform PAD/EFT Transactions")]
-        [Xunit.TraitAttribute("Description", "Perform an PAD Refund Void Transaction  (Unique Reference Number Required then re" +
-            "used)")]
-        public void PerformAnPADRefundVoidTransactionUniqueReferenceNumberRequiredThenReused()
+        [Xunit.TraitAttribute("Description", "Perform an PAD Refund Void Transaction  (PADRefundVoid needs new bdd and pre-pre-" +
+            "ref?)")]
+        public void PerformAnPADRefundVoidTransactionPADRefundVoidNeedsNewBddAndPre_Pre_Ref()
         {
             string[] tagsOfScenario = ((string[])(null));
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Perform an PAD Refund Void Transaction  (Unique Reference Number Required then re" +
-                    "used)", null, tagsOfScenario, argumentsOfScenario, featureTags);
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Perform an PAD Refund Void Transaction  (PADRefundVoid needs new bdd and pre-pre-" +
+                    "ref?)", null, tagsOfScenario, argumentsOfScenario, featureTags);
 #line 36
  this.ScenarioInitialize(scenarioInfo);
 #line hidden
@@ -278,7 +275,7 @@ namespace PaymentAPI.Features
   testRunner.And("a \"PADRefund\" transaction has been performed", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
 #line 41
-  testRunner.And("the user prepares the Payment API \"PADRefundVoid\" request", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+  testRunner.And("the user prepares the PAD API \"PADRefundVoid\" request", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
 #line 42
   testRunner.When("a POST request is performed", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
@@ -309,82 +306,56 @@ namespace PaymentAPI.Features
             {
                 this.ScenarioStart();
 #line 47
-  testRunner.Given("the user attempts to connect to the Payment API", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
-#line hidden
-#line 48
-  testRunner.And("the user has a valid jwt token and unique idempotency key", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line hidden
-#line 49
-  testRunner.When("the user prepares the \"PADDeactivate.json\" payload", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
-#line hidden
-#line 50
-  testRunner.And("a POST request is performed", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line hidden
-#line 51
-  testRunner.Then("the response code will be response code \'202\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
-#line hidden
-#line 52
-  testRunner.Given("the user attempts to connect to the Payment API", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
-#line hidden
-#line 53
-  testRunner.And("the user has a valid jwt token and unique idempotency key", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line hidden
-#line 54
-  testRunner.When("the user prepares the \"PADDebit.json\" payload", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
-#line hidden
-#line 55
-  testRunner.And("a POST request is performed", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line hidden
-#line 56
-  testRunner.Then("the response code will be response code \'400\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
-#line hidden
-#line 57
-  testRunner.Given("the user attempts to connect to the Payment API", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
-#line hidden
-#line 58
-  testRunner.And("the user has a valid jwt token and unique idempotency key", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line hidden
-#line 59
-  testRunner.When("the user prepares the \"PADReactivate.json\" payload", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
-#line hidden
-#line 60
-  testRunner.And("a POST request is performed", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line hidden
-#line 61
-  testRunner.Then("the response code will be response code \'202\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
-#line hidden
-#line 62
-  testRunner.Given("the user attempts to connect to the Payment API", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
-#line hidden
-#line 63
-  testRunner.And("the user has a valid jwt token and unique idempotency key", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line hidden
-#line 64
-  testRunner.When("the user prepares the \"PADDebit.json\" payload", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
-#line hidden
-#line 65
-  testRunner.And("a POST request is performed", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line hidden
-#line 66
-  testRunner.Then("the response code will be response code \'202\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
-#line hidden
-#line 68
   testRunner.Given("a \"PADDeactivate\" transaction has been performed", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
-#line 69
+#line 48
   testRunner.And("a \"PADDebit\" transaction has been performed", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
-#line 70
+#line 49
+  testRunner.And("the response code will be response code \'400\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line hidden
+#line 50
   testRunner.And("a \"PADReactivate\" transaction has been performed", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
-#line 71
-  testRunner.And("the user prepares the Payment API \"PADDebit\" request", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line 51
+  testRunner.And("the user prepares the PAD API \"PADDebitVoid\" request", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
-#line 72
+#line 52
   testRunner.When("a POST request is performed", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
-#line 73
+#line 53
   testRunner.Then("the response code will be response code \'202\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line hidden
+            }
+            this.ScenarioCleanup();
+        }
+        
+        [Xunit.SkippableFactAttribute(DisplayName="Perform a Add Token Transaction")]
+        [Xunit.TraitAttribute("FeatureTitle", "Perform PAD/EFT Transactions")]
+        [Xunit.TraitAttribute("Description", "Perform a Add Token Transaction")]
+        public void PerformAAddTokenTransaction()
+        {
+            string[] tagsOfScenario = ((string[])(null));
+            System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Perform a Add Token Transaction", null, tagsOfScenario, argumentsOfScenario, featureTags);
+#line 55
+ this.ScenarioInitialize(scenarioInfo);
+#line hidden
+            if ((TagHelper.ContainsIgnoreTag(tagsOfScenario) || TagHelper.ContainsIgnoreTag(featureTags)))
+            {
+                testRunner.SkipScenario();
+            }
+            else
+            {
+                this.ScenarioStart();
+#line 57
+  testRunner.Given("the user prepares the PAD API \"PADAddToken\" request", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+#line hidden
+#line 58
+  testRunner.When("a POST request is performed", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line hidden
+#line 59
+  testRunner.Then("the response code will be response code \'200\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             }
             this.ScenarioCleanup();

@@ -1,8 +1,8 @@
 {
   "terminal_id":"BPQATEST",
   "transaction_type":"pad_debit_void",
-  "reference_number":"SpecPrep1",
-  "amount":100,
+  "reference_number":"--previousreferencenumber--",
+  "amount":1000,
   "merchant_bank_number":"001",
   "merchant_branch_number":"00123",
   "merchant_account_number":"1234567"

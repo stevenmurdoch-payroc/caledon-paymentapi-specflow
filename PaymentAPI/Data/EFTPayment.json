@@ -3,7 +3,7 @@
   "client_id":"client-id",
   "transaction_type":"eft_payment",
   "charge_description":"EFTPAY-DESC",
-  "reference_number":"EFTPAY-TUES4100",
+  "reference_number":"--referencenumber--",
   "amount":1200,
   "bank_number":"001",
   "branch_number":"00123",

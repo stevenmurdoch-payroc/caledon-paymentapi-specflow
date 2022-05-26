@@ -29,16 +29,13 @@ public sealed class PaymentAPIStepDef
     [Given(@"a ""(.*)"" transaction has been performed")]
     public async Task GivenATransactionHasBeenPerformed(string preReqTransaction)
     {
-        GivenTheUserPreparesThePaymentApiRequest(preReqTransaction);
+        GivenTheUserPreparesThePadApiRequest(preReqTransaction);
         await _aPIRequestStepDef.WhenAPostRequestIsPerformed();
-        _aPIResponseStepDef.ThenTheResponseCodeWillBeResponseCode(200);
-
-
     }
 
 
     [Given(@"the user prepares the PAD API ""(.*)"" request")]
-    public void GivenTheUserPreparesThePadapiRequest(string requestType)
+    public void GivenTheUserPreparesThePadApiRequest(string requestType)
     {
         _transactionStepDef.GivenTheUserAttemptsToConnectToThePaymentApi();
         _commonStepDef.TheUserPreparesThePadPayload($"{requestType}.json");

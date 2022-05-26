@@ -3,7 +3,7 @@
   "client_id":"client-id",
   "transaction_type":"pad_account_verify",
   "charge_description":"ACCTVER-DESC",
-  "reference_number":"SpecPrep1",
+  "reference_number":"--referencenumber--",
   "amount":1,
   "bank_number":"001",
   "branch_number":"00123",

@@ -145,11 +145,25 @@ public sealed class CommonStepDef
     {
         // load file into scenarioContext["payload"] attribute
         string path = Path.Combine(Directory.GetParent(Directory.GetCurrentDirectory()).Parent.Parent.FullName + "/Data", fileName);
-        
-        JObject payload = JObject.Parse(File.ReadAllText(path));
-        Random rnd = new Random();
-        int reference_number  = rnd.Next(1, 10000);
+
+        var payloadString = File.ReadAllText(path);
+        var referenceNumber = GetRandomString();
+        payloadString = payloadString.Replace("--referencenumber--", referenceNumber);
+        if (_scenarioContext.ContainsKey("previousReferenceNumber"))
+        {
+            payloadString = payloadString.Replace("--previousreferencenumber--",
+                (string) _scenarioContext["previousReferenceNumber"]);
+        }
+
+        JObject payload = JObject.Parse(payloadString);
         _scenarioContext["payload"] = payload;
+        _scenarioContext["previousReferenceNumber"] = referenceNumber;
+        
+        
+    }
+    public string GetRandomString()
+    {
+        return DateTime.Now.ToString("yyyyMdhmmss");
     }
 
     [When(@"the user provides the additional headers")]
