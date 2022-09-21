@@ -25,35 +25,25 @@
 		When a POST request is performed
 		Then the response code will be response code '202'
 		
-	Scenario: Perform an PAD Refund Transaction  (PAD Settlement Required)
+	@wip 
+		Scenario: Perform an PAD Refund Transaction (PAD Settlement cannot be done as a post request)
 		
-		Given a "PADDebit" transaction has been performed
-		Given a "Settlement" transaction has been performed
-		And the user prepares the PAD API "PADRefund" request       
-		When a POST request is performed
-		Then the response code will be response code '202'
 		
-	Scenario: Perform an PAD Refund Void Transaction  (PADRefundVoid needs new bdd and pre-pre-ref?) Creating new ref at settlement stage...
-		
-		Given a "PADDebit" transaction has been performed
-		And the user prepares the Payment API "Settlement" request       
-		When a POST request is performed
-		And a "PADRefund" transaction has been performed
-		And the user prepares the PAD API "PADRefundVoid" request       
-		When a POST request is performed
-		Then the response code will be response code '202'
-		
+	@wip 
+			Scenario: Perform an PAD Refund Void Transaction (PAD Settlement cannot be done as a post request)
+	
+	
 	Scenario: Perform a Deactivate/Reactivate Token Transaction
 			
 		Given a "PADDeactivate" transaction has been performed
-		And a "PADDebit" transaction has been performed
-		And the response code will be response code '400'
-		And a "PADReactivate" transaction has been performed
-		And the user prepares the PAD API "PADDebitVoid" request       
-		When a POST request is performed
-		Then the response code will be response code '202'
+		And a "PADDebitTokenReDeActivated" transaction has been performed
+		Then the response code will be response code '400'
+		Given a "PADReactivate" transaction has been performed
+		And the user prepares the PAD API "PADDebitTokenReDeActivated" request       
+		Then the response code will be response code '200'
+
 		
-	Scenario: Perform a Add Token Transaction
+	Scenario: Perform a Add PAD Token Transaction
 		
 		Given the user prepares the PAD API "PADAddToken" request       
 		When a POST request is performed

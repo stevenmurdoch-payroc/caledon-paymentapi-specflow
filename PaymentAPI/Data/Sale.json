@@ -1,7 +1,7 @@
 {
   "terminal_id": "BPQATEST",
   "transaction_type": "card_sale",
-  "reference": "SpecFlowSale1",
+  "reference": "--referencenumber--",
   "payment": {
     "amount": 200,
     "dynamic_dba": "ABC CO 659857458856"

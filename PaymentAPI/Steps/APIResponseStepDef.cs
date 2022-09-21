@@ -102,4 +102,12 @@ public sealed class ApiResponseStepDef
     {
      //TODO: ScenarioContext.StepIsPending();
     }
-}
+
+    [Then(@"the response message will display ""(.*)""")]
+    public void ThenTheResponseMessageWillDisplay(int checkMessage)
+    {
+        var response = (RestResponse) _scenarioContext["APIResponse"];
+            int numericResponse = (int) response.StatusDescription;
+            numericResponse.Should().Be(checkMessage);
+        }
+    }

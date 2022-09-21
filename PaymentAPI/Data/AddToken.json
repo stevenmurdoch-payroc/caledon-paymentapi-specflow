@@ -1,0 +1,13 @@
+{
+  "terminal_id":"BPQATEST",
+  "transaction_type":"token_add",
+  "card_information":{
+    "card_number":"4111111111111111",
+    "expiry_year":2029,
+    "expiry_month":3
+  },
+  "token":{
+    "token":"--referencenumber--",
+    "reference":"123"
+  }
+}

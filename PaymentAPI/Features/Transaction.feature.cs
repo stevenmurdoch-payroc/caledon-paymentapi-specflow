@@ -494,68 +494,6 @@ namespace PaymentAPI.Features
             this.ScenarioCleanup();
         }
         
-        [Xunit.SkippableFactAttribute(DisplayName="Perform a Rejected Sale Transaction")]
-        [Xunit.TraitAttribute("FeatureTitle", "Perform Payment API Transaction")]
-        [Xunit.TraitAttribute("Description", "Perform a Rejected Sale Transaction")]
-        public void PerformARejectedSaleTransaction()
-        {
-            string[] tagsOfScenario = ((string[])(null));
-            System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Perform a Rejected Sale Transaction", null, tagsOfScenario, argumentsOfScenario, featureTags);
-#line 85
- this.ScenarioInitialize(scenarioInfo);
-#line hidden
-            if ((TagHelper.ContainsIgnoreTag(tagsOfScenario) || TagHelper.ContainsIgnoreTag(featureTags)))
-            {
-                testRunner.SkipScenario();
-            }
-            else
-            {
-                this.ScenarioStart();
-#line 87
-  testRunner.Given("the user prepares the Payment API \"RejectedSale\" request", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
-#line hidden
-#line 88
-  testRunner.When("a POST request is performed", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
-#line hidden
-#line 89
-  testRunner.Then("the response code will be response code \'400\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
-#line hidden
-            }
-            this.ScenarioCleanup();
-        }
-        
-        [Xunit.SkippableFactAttribute(DisplayName="Perform a Rejected Sale Transaction using invalid card number")]
-        [Xunit.TraitAttribute("FeatureTitle", "Perform Payment API Transaction")]
-        [Xunit.TraitAttribute("Description", "Perform a Rejected Sale Transaction using invalid card number")]
-        public void PerformARejectedSaleTransactionUsingInvalidCardNumber()
-        {
-            string[] tagsOfScenario = ((string[])(null));
-            System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Perform a Rejected Sale Transaction using invalid card number", null, tagsOfScenario, argumentsOfScenario, featureTags);
-#line 91
- this.ScenarioInitialize(scenarioInfo);
-#line hidden
-            if ((TagHelper.ContainsIgnoreTag(tagsOfScenario) || TagHelper.ContainsIgnoreTag(featureTags)))
-            {
-                testRunner.SkipScenario();
-            }
-            else
-            {
-                this.ScenarioStart();
-#line 93
-  testRunner.Given("the user prepares the Payment API \"RejectedSaleInvalidCardNumber\" request", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
-#line hidden
-#line 94
-  testRunner.When("a POST request is performed", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
-#line hidden
-#line 95
-  testRunner.Then("the response code will be response code \'400\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
-#line hidden
-            }
-            this.ScenarioCleanup();
-        }
-        
         [Xunit.SkippableFactAttribute(DisplayName="Perform a Return Transaction")]
         [Xunit.TraitAttribute("FeatureTitle", "Perform Payment API Transaction")]
         [Xunit.TraitAttribute("Description", "Perform a Return Transaction")]
@@ -564,7 +502,7 @@ namespace PaymentAPI.Features
             string[] tagsOfScenario = ((string[])(null));
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Perform a Return Transaction", null, tagsOfScenario, argumentsOfScenario, featureTags);
-#line 98
+#line 86
  this.ScenarioInitialize(scenarioInfo);
 #line hidden
             if ((TagHelper.ContainsIgnoreTag(tagsOfScenario) || TagHelper.ContainsIgnoreTag(featureTags)))
@@ -574,19 +512,19 @@ namespace PaymentAPI.Features
             else
             {
                 this.ScenarioStart();
-#line 100
+#line 88
   testRunner.Given("a \"Sale\" transaction has been performed", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
-#line 101
+#line 89
   testRunner.And("a \"Settlement\" transaction has been performed", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
-#line 102
+#line 90
   testRunner.And("the user prepares the Payment API \"Return\" request", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
-#line 103
+#line 91
   testRunner.When("a POST request is performed", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
-#line 104
+#line 92
   testRunner.Then("the response code will be response code \'200\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             }
@@ -601,7 +539,7 @@ namespace PaymentAPI.Features
             string[] tagsOfScenario = ((string[])(null));
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Perform a Sale Transaction using a token", null, tagsOfScenario, argumentsOfScenario, featureTags);
-#line 107
+#line 95
  this.ScenarioInitialize(scenarioInfo);
 #line hidden
             if ((TagHelper.ContainsIgnoreTag(tagsOfScenario) || TagHelper.ContainsIgnoreTag(featureTags)))
@@ -611,28 +549,28 @@ namespace PaymentAPI.Features
             else
             {
                 this.ScenarioStart();
-#line 109
+#line 97
   testRunner.Given("the user prepares the Payment API \"SaleWithToken\" request", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
-#line 110
+#line 98
   testRunner.When("a POST request is performed", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
-#line 111
+#line 99
   testRunner.Then("the response code will be response code \'200\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             }
             this.ScenarioCleanup();
         }
         
-        [Xunit.SkippableFactAttribute(DisplayName="Perform a Scheduled Transaction (\'Create new Token each time?\')")]
+        [Xunit.SkippableFactAttribute(DisplayName="Perform a Scheduled Transaction")]
         [Xunit.TraitAttribute("FeatureTitle", "Perform Payment API Transaction")]
-        [Xunit.TraitAttribute("Description", "Perform a Scheduled Transaction (\'Create new Token each time?\')")]
-        public void PerformAScheduledTransactionCreateNewTokenEachTime()
+        [Xunit.TraitAttribute("Description", "Perform a Scheduled Transaction")]
+        public void PerformAScheduledTransaction()
         {
             string[] tagsOfScenario = ((string[])(null));
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Perform a Scheduled Transaction (\'Create new Token each time?\')", null, tagsOfScenario, argumentsOfScenario, featureTags);
-#line 113
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Perform a Scheduled Transaction", null, tagsOfScenario, argumentsOfScenario, featureTags);
+#line 101
  this.ScenarioInitialize(scenarioInfo);
 #line hidden
             if ((TagHelper.ContainsIgnoreTag(tagsOfScenario) || TagHelper.ContainsIgnoreTag(featureTags)))
@@ -642,16 +580,16 @@ namespace PaymentAPI.Features
             else
             {
                 this.ScenarioStart();
-#line 115
-  testRunner.Given("a \"PADAddToken\" transaction has been performed", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+#line 103
+  testRunner.Given("a \"AddToken\" transaction has been performed", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
-#line 116
+#line 104
   testRunner.And("the user prepares the PAD API \"Schedule\" request", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
-#line 117
+#line 105
   testRunner.When("a POST request is performed", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
-#line 118
+#line 106
   testRunner.Then("the response code will be response code \'200\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             }
@@ -666,7 +604,7 @@ namespace PaymentAPI.Features
             string[] tagsOfScenario = ((string[])(null));
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Perform a Settlement Transaction", null, tagsOfScenario, argumentsOfScenario, featureTags);
-#line 120
+#line 108
  this.ScenarioInitialize(scenarioInfo);
 #line hidden
             if ((TagHelper.ContainsIgnoreTag(tagsOfScenario) || TagHelper.ContainsIgnoreTag(featureTags)))
@@ -676,16 +614,16 @@ namespace PaymentAPI.Features
             else
             {
                 this.ScenarioStart();
-#line 122
+#line 110
   testRunner.Given("a \"SaleWithToken\" transaction has been performed", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
-#line 123
+#line 111
   testRunner.And("the user prepares the Payment API \"Settlement\" request", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
-#line 124
+#line 112
   testRunner.When("a POST request is performed", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
-#line 125
+#line 113
   testRunner.Then("the response code will be response code \'200\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             }
@@ -700,7 +638,7 @@ namespace PaymentAPI.Features
             string[] tagsOfScenario = ((string[])(null));
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Perform a Void Transaction", null, tagsOfScenario, argumentsOfScenario, featureTags);
-#line 127
+#line 115
  this.ScenarioInitialize(scenarioInfo);
 #line hidden
             if ((TagHelper.ContainsIgnoreTag(tagsOfScenario) || TagHelper.ContainsIgnoreTag(featureTags)))
@@ -710,16 +648,16 @@ namespace PaymentAPI.Features
             else
             {
                 this.ScenarioStart();
-#line 129
+#line 117
   testRunner.Given("a \"Sale\" transaction has been performed", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
-#line 130
+#line 118
   testRunner.And("the user prepares the Payment API \"Void\" request", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
-#line 131
+#line 119
   testRunner.When("a POST request is performed", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
-#line 132
+#line 120
   testRunner.Then("the response code will be response code \'200\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             }
@@ -734,7 +672,7 @@ namespace PaymentAPI.Features
             string[] tagsOfScenario = ((string[])(null));
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Perform a Return Void Transaction", null, tagsOfScenario, argumentsOfScenario, featureTags);
-#line 134
+#line 122
  this.ScenarioInitialize(scenarioInfo);
 #line hidden
             if ((TagHelper.ContainsIgnoreTag(tagsOfScenario) || TagHelper.ContainsIgnoreTag(featureTags)))
@@ -744,19 +682,50 @@ namespace PaymentAPI.Features
             else
             {
                 this.ScenarioStart();
-#line 136
+#line 124
   testRunner.Given("a \"Sale\" transaction has been performed", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
-#line 137
+#line 125
   testRunner.And("a \"Void\" transaction has been performed", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
-#line 138
+#line 126
   testRunner.And("the user prepares the Payment API \"ReturnVoid\" request", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
-#line 139
+#line 127
   testRunner.When("a POST request is performed", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
-#line 140
+#line 128
+  testRunner.Then("the response code will be response code \'200\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line hidden
+            }
+            this.ScenarioCleanup();
+        }
+        
+        [Xunit.SkippableFactAttribute(DisplayName="Perform a Add Token Transaction")]
+        [Xunit.TraitAttribute("FeatureTitle", "Perform Payment API Transaction")]
+        [Xunit.TraitAttribute("Description", "Perform a Add Token Transaction")]
+        public void PerformAAddTokenTransaction()
+        {
+            string[] tagsOfScenario = ((string[])(null));
+            System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Perform a Add Token Transaction", null, tagsOfScenario, argumentsOfScenario, featureTags);
+#line 130
+ this.ScenarioInitialize(scenarioInfo);
+#line hidden
+            if ((TagHelper.ContainsIgnoreTag(tagsOfScenario) || TagHelper.ContainsIgnoreTag(featureTags)))
+            {
+                testRunner.SkipScenario();
+            }
+            else
+            {
+                this.ScenarioStart();
+#line 132
+  testRunner.Given("the user prepares the PAD API \"AddToken\" request", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+#line hidden
+#line 133
+  testRunner.When("a POST request is performed", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line hidden
+#line 134
   testRunner.Then("the response code will be response code \'200\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             }

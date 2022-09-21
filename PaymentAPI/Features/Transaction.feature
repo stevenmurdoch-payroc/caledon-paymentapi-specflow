@@ -82,19 +82,7 @@
 		When a POST request is performed
 		Then the response code will be response code '200'
 		
-	Scenario: Perform a Rejected Sale Transaction
-	
-		Given the user prepares the Payment API "RejectedSale" request       
-		When a POST request is performed
-		Then the response code will be response code '400'
-		
-	Scenario: Perform a Rejected Sale Transaction using invalid card number
- 		
-		Given the user prepares the Payment API "RejectedSaleInvalidCardNumber" request       
-		When a POST request is performed
-		Then the response code will be response code '400'
-		  
-		
+		  		
 	Scenario: Perform a Return Transaction
 		
 		Given a "Sale" transaction has been performed
@@ -110,9 +98,9 @@
 		When a POST request is performed
 		Then the response code will be response code '200'
 		
-	Scenario: Perform a Scheduled Transaction ('Create new Token each time?')
+	Scenario: Perform a Scheduled Transaction
 		
-		Given a "PADAddToken" transaction has been performed
+		Given a "AddToken" transaction has been performed
 		And the user prepares the PAD API "Schedule" request      
 		When a POST request is performed
 		Then the response code will be response code '200'
@@ -136,5 +124,11 @@
 		Given a "Sale" transaction has been performed
 		And a "Void" transaction has been performed
 		And the user prepares the Payment API "ReturnVoid" request       
+		When a POST request is performed
+		Then the response code will be response code '200'
+		
+	Scenario: Perform a Add Token Transaction
+		
+		Given the user prepares the PAD API "AddToken" request       
 		When a POST request is performed
 		Then the response code will be response code '200'

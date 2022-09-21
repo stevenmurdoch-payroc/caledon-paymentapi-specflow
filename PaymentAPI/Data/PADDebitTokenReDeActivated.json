@@ -1,0 +1,11 @@
+{
+  "terminal_id":"BPQATEST",
+  "transaction_type":"card_sale",
+  "reference":"--referencenumber--",
+  "payment":{
+    "amount":200
+  },
+  "token":{
+    "token":"SpecFlowToken1"
+  }
+}

@@ -207,16 +207,21 @@ namespace PaymentAPI.Features
             this.ScenarioCleanup();
         }
         
-        [Xunit.SkippableFactAttribute(DisplayName="Perform an PAD Refund Transaction  (PAD Settlement Required)")]
+        [Xunit.SkippableFactAttribute(DisplayName="Perform an PAD Refund Transaction (PAD Settlement cannot be done as a post reques" +
+            "t)")]
         [Xunit.TraitAttribute("FeatureTitle", "Perform PAD/EFT Transactions")]
-        [Xunit.TraitAttribute("Description", "Perform an PAD Refund Transaction  (PAD Settlement Required)")]
-        public void PerformAnPADRefundTransactionPADSettlementRequired()
+        [Xunit.TraitAttribute("Description", "Perform an PAD Refund Transaction (PAD Settlement cannot be done as a post reques" +
+            "t)")]
+        [Xunit.TraitAttribute("Category", "wip")]
+        public void PerformAnPADRefundTransactionPADSettlementCannotBeDoneAsAPostRequest()
         {
-            string[] tagsOfScenario = ((string[])(null));
+            string[] tagsOfScenario = new string[] {
+                    "wip"};
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Perform an PAD Refund Transaction  (PAD Settlement Required)", null, tagsOfScenario, argumentsOfScenario, featureTags);
-#line 28
- this.ScenarioInitialize(scenarioInfo);
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Perform an PAD Refund Transaction (PAD Settlement cannot be done as a post reques" +
+                    "t)", null, tagsOfScenario, argumentsOfScenario, featureTags);
+#line 29
+  this.ScenarioInitialize(scenarioInfo);
 #line hidden
             if ((TagHelper.ContainsIgnoreTag(tagsOfScenario) || TagHelper.ContainsIgnoreTag(featureTags)))
             {
@@ -225,38 +230,25 @@ namespace PaymentAPI.Features
             else
             {
                 this.ScenarioStart();
-#line 30
-  testRunner.Given("a \"PADDebit\" transaction has been performed", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
-#line hidden
-#line 31
-  testRunner.Given("a \"Settlement\" transaction has been performed", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
-#line hidden
-#line 32
-  testRunner.And("the user prepares the PAD API \"PADRefund\" request", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line hidden
-#line 33
-  testRunner.When("a POST request is performed", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
-#line hidden
-#line 34
-  testRunner.Then("the response code will be response code \'202\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
-#line hidden
             }
             this.ScenarioCleanup();
         }
         
-        [Xunit.SkippableFactAttribute(DisplayName="Perform an PAD Refund Void Transaction  (PADRefundVoid needs new bdd and pre-pre-" +
-            "ref?) Creating new ref at settlement stage...")]
+        [Xunit.SkippableFactAttribute(DisplayName="Perform an PAD Refund Void Transaction (PAD Settlement cannot be done as a post r" +
+            "equest)")]
         [Xunit.TraitAttribute("FeatureTitle", "Perform PAD/EFT Transactions")]
-        [Xunit.TraitAttribute("Description", "Perform an PAD Refund Void Transaction  (PADRefundVoid needs new bdd and pre-pre-" +
-            "ref?) Creating new ref at settlement stage...")]
-        public void PerformAnPADRefundVoidTransactionPADRefundVoidNeedsNewBddAndPre_Pre_RefCreatingNewRefAtSettlementStage_()
+        [Xunit.TraitAttribute("Description", "Perform an PAD Refund Void Transaction (PAD Settlement cannot be done as a post r" +
+            "equest)")]
+        [Xunit.TraitAttribute("Category", "wip")]
+        public void PerformAnPADRefundVoidTransactionPADSettlementCannotBeDoneAsAPostRequest()
         {
-            string[] tagsOfScenario = ((string[])(null));
+            string[] tagsOfScenario = new string[] {
+                    "wip"};
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Perform an PAD Refund Void Transaction  (PADRefundVoid needs new bdd and pre-pre-" +
-                    "ref?) Creating new ref at settlement stage...", null, tagsOfScenario, argumentsOfScenario, featureTags);
-#line 36
- this.ScenarioInitialize(scenarioInfo);
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Perform an PAD Refund Void Transaction (PAD Settlement cannot be done as a post r" +
+                    "equest)", null, tagsOfScenario, argumentsOfScenario, featureTags);
+#line 33
+   this.ScenarioInitialize(scenarioInfo);
 #line hidden
             if ((TagHelper.ContainsIgnoreTag(tagsOfScenario) || TagHelper.ContainsIgnoreTag(featureTags)))
             {
@@ -265,27 +257,6 @@ namespace PaymentAPI.Features
             else
             {
                 this.ScenarioStart();
-#line 38
-  testRunner.Given("a \"PADDebit\" transaction has been performed", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
-#line hidden
-#line 39
-  testRunner.And("the user prepares the Payment API \"Settlement\" request", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line hidden
-#line 40
-  testRunner.When("a POST request is performed", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
-#line hidden
-#line 41
-  testRunner.And("a \"PADRefund\" transaction has been performed", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line hidden
-#line 42
-  testRunner.And("the user prepares the PAD API \"PADRefundVoid\" request", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line hidden
-#line 43
-  testRunner.When("a POST request is performed", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
-#line hidden
-#line 44
-  testRunner.Then("the response code will be response code \'202\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
-#line hidden
             }
             this.ScenarioCleanup();
         }
@@ -298,6 +269,46 @@ namespace PaymentAPI.Features
             string[] tagsOfScenario = ((string[])(null));
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Perform a Deactivate/Reactivate Token Transaction", null, tagsOfScenario, argumentsOfScenario, featureTags);
+#line 36
+ this.ScenarioInitialize(scenarioInfo);
+#line hidden
+            if ((TagHelper.ContainsIgnoreTag(tagsOfScenario) || TagHelper.ContainsIgnoreTag(featureTags)))
+            {
+                testRunner.SkipScenario();
+            }
+            else
+            {
+                this.ScenarioStart();
+#line 38
+  testRunner.Given("a \"PADDeactivate\" transaction has been performed", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+#line hidden
+#line 39
+  testRunner.And("a \"PADDebitTokenReDeActivated\" transaction has been performed", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line hidden
+#line 40
+  testRunner.Then("the response code will be response code \'400\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line hidden
+#line 41
+  testRunner.Given("a \"PADReactivate\" transaction has been performed", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+#line hidden
+#line 42
+  testRunner.And("the user prepares the PAD API \"PADDebitTokenReDeActivated\" request", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line hidden
+#line 43
+  testRunner.Then("the response code will be response code \'200\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line hidden
+            }
+            this.ScenarioCleanup();
+        }
+        
+        [Xunit.SkippableFactAttribute(DisplayName="Perform a Add PAD Token Transaction")]
+        [Xunit.TraitAttribute("FeatureTitle", "Perform PAD/EFT Transactions")]
+        [Xunit.TraitAttribute("Description", "Perform a Add PAD Token Transaction")]
+        public void PerformAAddPADTokenTransaction()
+        {
+            string[] tagsOfScenario = ((string[])(null));
+            System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Perform a Add PAD Token Transaction", null, tagsOfScenario, argumentsOfScenario, featureTags);
 #line 46
  this.ScenarioInitialize(scenarioInfo);
 #line hidden
@@ -309,55 +320,12 @@ namespace PaymentAPI.Features
             {
                 this.ScenarioStart();
 #line 48
-  testRunner.Given("a \"PADDeactivate\" transaction has been performed", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
-#line hidden
-#line 49
-  testRunner.And("a \"PADDebit\" transaction has been performed", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line hidden
-#line 50
-  testRunner.And("the response code will be response code \'400\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line hidden
-#line 51
-  testRunner.And("a \"PADReactivate\" transaction has been performed", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line hidden
-#line 52
-  testRunner.And("the user prepares the PAD API \"PADDebitVoid\" request", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line hidden
-#line 53
-  testRunner.When("a POST request is performed", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
-#line hidden
-#line 54
-  testRunner.Then("the response code will be response code \'202\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
-#line hidden
-            }
-            this.ScenarioCleanup();
-        }
-        
-        [Xunit.SkippableFactAttribute(DisplayName="Perform a Add Token Transaction")]
-        [Xunit.TraitAttribute("FeatureTitle", "Perform PAD/EFT Transactions")]
-        [Xunit.TraitAttribute("Description", "Perform a Add Token Transaction")]
-        public void PerformAAddTokenTransaction()
-        {
-            string[] tagsOfScenario = ((string[])(null));
-            System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Perform a Add Token Transaction", null, tagsOfScenario, argumentsOfScenario, featureTags);
-#line 56
- this.ScenarioInitialize(scenarioInfo);
-#line hidden
-            if ((TagHelper.ContainsIgnoreTag(tagsOfScenario) || TagHelper.ContainsIgnoreTag(featureTags)))
-            {
-                testRunner.SkipScenario();
-            }
-            else
-            {
-                this.ScenarioStart();
-#line 58
   testRunner.Given("the user prepares the PAD API \"PADAddToken\" request", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
-#line 59
+#line 49
   testRunner.When("a POST request is performed", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
-#line 60
+#line 50
   testRunner.Then("the response code will be response code \'200\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             }
