@@ -80,14 +80,14 @@ namespace PaymentAPI.Features
             this.TestTearDown();
         }
         
-        [Xunit.SkippableFactAttribute(DisplayName="Perform a Rejected Sale Transaction")]
+        [Xunit.SkippableFactAttribute(DisplayName="Perform a Rejected Sale Transaction (Amount=2204)")]
         [Xunit.TraitAttribute("FeatureTitle", "CardNegativeValidation")]
-        [Xunit.TraitAttribute("Description", "Perform a Rejected Sale Transaction")]
-        public void PerformARejectedSaleTransaction()
+        [Xunit.TraitAttribute("Description", "Perform a Rejected Sale Transaction (Amount=2204)")]
+        public void PerformARejectedSaleTransactionAmount2204()
         {
             string[] tagsOfScenario = ((string[])(null));
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Perform a Rejected Sale Transaction", null, tagsOfScenario, argumentsOfScenario, featureTags);
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Perform a Rejected Sale Transaction (Amount=2204)", null, tagsOfScenario, argumentsOfScenario, featureTags);
 #line 4
  this.ScenarioInitialize(scenarioInfo);
 #line hidden
@@ -142,14 +142,14 @@ namespace PaymentAPI.Features
             this.ScenarioCleanup();
         }
         
-        [Xunit.SkippableFactAttribute(DisplayName="Perform a PAD Debit with a Duplicated Reference Number")]
+        [Xunit.SkippableFactAttribute(DisplayName="Perform a PAD Debit with a Invalid Reference Number")]
         [Xunit.TraitAttribute("FeatureTitle", "CardNegativeValidation")]
-        [Xunit.TraitAttribute("Description", "Perform a PAD Debit with a Duplicated Reference Number")]
-        public void PerformAPADDebitWithADuplicatedReferenceNumber()
+        [Xunit.TraitAttribute("Description", "Perform a PAD Debit with a Invalid Reference Number")]
+        public void PerformAPADDebitWithAInvalidReferenceNumber()
         {
             string[] tagsOfScenario = ((string[])(null));
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Perform a PAD Debit with a Duplicated Reference Number", null, tagsOfScenario, argumentsOfScenario, featureTags);
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Perform a PAD Debit with a Invalid Reference Number", null, tagsOfScenario, argumentsOfScenario, featureTags);
 #line 17
  this.ScenarioInitialize(scenarioInfo);
 #line hidden
@@ -171,6 +171,9 @@ namespace PaymentAPI.Features
 #line hidden
 #line 22
   testRunner.Then("the response code will be response code \'400\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line hidden
+#line 23
+  testRunner.And("the response message will display \"Invalid Reference Number\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
             }
             this.ScenarioCleanup();

@@ -104,10 +104,10 @@ public sealed class ApiResponseStepDef
     }
 
     [Then(@"the response message will display ""(.*)""")]
-    public void ThenTheResponseMessageWillDisplay(int checkMessage)
+    public void ThenTheResponseMessageWillDisplay(string checkMessage)
     {
         var response = (RestResponse) _scenarioContext["APIResponse"];
-            int numericResponse = (int) response.StatusDescription;
-            numericResponse.Should().Be(checkMessage);
-        }
+        var stringResponse = response.Content;
+        stringResponse.Should().Contain(checkMessage);
     }
+}
