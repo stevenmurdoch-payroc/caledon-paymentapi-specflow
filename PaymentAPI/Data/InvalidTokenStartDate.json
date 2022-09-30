@@ -1,0 +1,15 @@
+{
+  "terminal_id":"BPQATEST",
+  "transaction_type":"token_add",
+  "card_information":{
+    "card_number":"4520700000000024",
+    "expiry_year":2029,
+    "expiry_month":3
+  },
+  "token":{
+    "token":"Token-FutureStart3",
+    "reference":"123",
+    "start_date":"99998877",
+    "end_date":"20240101"
+  }
+}
