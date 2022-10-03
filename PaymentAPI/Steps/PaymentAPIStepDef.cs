@@ -34,7 +34,7 @@ public sealed class PaymentAPIStepDef
     }
 
 
-    [Given(@"the user prepares the PAD API ""(.*)"" request")]
+    [Given(@"the user prepares the API ""(.*)"" request")]
     public void GivenTheUserPreparesThePadApiRequest(string requestType)
     {
         _transactionStepDef.GivenTheUserAttemptsToConnectToThePaymentApi();

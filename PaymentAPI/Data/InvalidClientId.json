@@ -1,9 +1,9 @@
 {
   "terminal_id":"BPQATEST",
-  "client_id":"@£$%",
+  "client_id":"+*",
   "transaction_type":"pad_debit",
   "charge_description":"DEBIT-DESC",
-  "reference_number":"--referencenumber--",
+  "reference_number":"20221031328",
   "amount":1000,
   "bank_number":"001",
   "branch_number":"00123",

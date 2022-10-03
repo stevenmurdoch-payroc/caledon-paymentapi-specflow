@@ -99,10 +99,64 @@ Feature: CardNegativeValidation
 		When a POST request is performed
 		Then the response code will be response code '400'
 		And the response message will display "00 BAD END DATE"
-		
+	
+			
 	Scenario: Add a Token with an Invalid Token Reference
 		
-		Given the user prepares the Payment API "InvalidTokenReference" request       
+		Given the user prepares the API "InvalidTokenReference" request       
 		When a POST request is performed
 		Then the response code will be response code '400'
 		And the response message will display "ILLEGAL CHAR"
+		
+	Scenario: Add a Schedule with an Invalid Schedule Type
+		
+		Given a "AddToken" transaction has been performed
+		And the user prepares the API "InvalidScheduleType" request       
+		When a POST request is performed
+		Then the response code will be response code '400'
+		And the response message will display "INVALID SCHED TYPE"
+		
+		
+	Scenario: Add a Schedule which Already Exists
+		Given the user prepares the API "ScheduleAlreadyExists" request       
+		When a POST request is performed
+		Then the response code will be response code '400'
+		And the response message will display "SCHEDULE EXISTS"
+		
+	
+	Scenario: Add a Schedule with an Invalid Schedule Frequency
+		
+		Given a "AddToken" transaction has been performed
+		And the user prepares the API "InvalidScheduleFrequency" request      
+		When a POST request is performed
+		Then the response code will be response code '400'
+		And the response message will display "MALFORMED TRANS"
+		
+		
+	Scenario: Add a Schedule with an Invalid Schedule Number of Payments
+		
+		Given a "AddToken" transaction has been performed
+		And the user prepares the API "InvalidScheduleNumberOfPayments" request      
+		When a POST request is performed
+		Then the response code will be response code '400'
+		And the response message will display "MALFORMED TRANS"
+	
+		
+	Scenario: Add a Schedule with an Invalid Schedule Start Date
+		
+		Given a "AddToken" transaction has been performed
+		And the user prepares the API "InvalidScheduleStartDate" request       
+		When a POST request is performed
+		Then the response code will be response code '400'
+		And the response message will display "START DATE INVALID"
+		
+	
+	Scenario: Add a Schedule with an Invalid Schedule Reference
+		
+		Given a "AddToken" transaction has been performed
+		And the user prepares the API "InvalidScheduleReference" request      
+		When a POST request is performed
+		Then the response code will be response code '400'
+		And the response message will display "ILLEGAL CHAR"
+		
+		

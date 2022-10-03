@@ -1,0 +1,17 @@
+{
+  "terminal_id":"BPQATEST",
+  "transaction_type":"schedule_add",
+  "payment":{
+    "amount":500
+  },
+  "token":{
+    "token":"--previousreferencenumber--"
+  },
+  "schedule":{
+    "type":"MONTHLY",
+    "frequency":3333,
+    "reference":"123",
+    "number_of_payments":6,
+    "start_date":20230707
+  }
+}

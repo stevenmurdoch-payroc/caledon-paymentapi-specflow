@@ -1,0 +1,17 @@
+{
+  "terminal_id":"BPQATEST",
+  "transaction_type":"schedule_add",
+  "payment":{
+    "amount":500
+  },
+  "token":{
+    "token":"SpecFlow2109"
+  },
+  "schedule":{
+    "type":"WEEKLY",
+    "frequency":2,
+    "reference":"Schedule1",
+    "number_of_payments":6,
+    "start_date":20290808
+  }
+}
