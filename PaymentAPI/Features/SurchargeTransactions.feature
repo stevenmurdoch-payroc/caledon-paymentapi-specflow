@@ -27,7 +27,17 @@ Feature: SurchargeTransactions
 		When a POST request is performed
 		Then the response code will be response code '200'
 
-
+	Scenario: Perform a Surcharge Full Reversal Transaction
 		
-
+		Given a "SurchargePreAuth" transaction has been performed
+		And the user prepares the API "SurchargeFullReversal" request       
+		When a POST request is performed
+		Then the response code will be response code '200'
+		
+	Scenario: Perform a Surcharge Partial Reversal Transaction
+		
+		Given a "SurchargePreAuth" transaction has been performed
+		And the user prepares the API "SurchargePartialReversal" request       
+		When a POST request is performed
+		Then the response code will be response code '200'
 		
