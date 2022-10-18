@@ -556,11 +556,9 @@ namespace PaymentAPI.Features
         [Xunit.SkippableFactAttribute(DisplayName="Add a Token with an Invalid Token Reference")]
         [Xunit.TraitAttribute("FeatureTitle", "CardNegativeValidation")]
         [Xunit.TraitAttribute("Description", "Add a Token with an Invalid Token Reference")]
-        [Xunit.TraitAttribute("Category", "wip")]
         public void AddATokenWithAnInvalidTokenReference()
         {
-            string[] tagsOfScenario = new string[] {
-                    "wip"};
+            string[] tagsOfScenario = ((string[])(null));
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Add a Token with an Invalid Token Reference", null, tagsOfScenario, argumentsOfScenario, featureTags);
 #line 104
@@ -737,11 +735,9 @@ namespace PaymentAPI.Features
         [Xunit.SkippableFactAttribute(DisplayName="Add a Schedule with an Invalid Schedule Start Date")]
         [Xunit.TraitAttribute("FeatureTitle", "CardNegativeValidation")]
         [Xunit.TraitAttribute("Description", "Add a Schedule with an Invalid Schedule Start Date")]
-        [Xunit.TraitAttribute("Category", "wip")]
         public void AddAScheduleWithAnInvalidScheduleStartDate()
         {
-            string[] tagsOfScenario = new string[] {
-                    "wip"};
+            string[] tagsOfScenario = ((string[])(null));
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Add a Schedule with an Invalid Schedule Start Date", null, tagsOfScenario, argumentsOfScenario, featureTags);
 #line 145
@@ -776,11 +772,9 @@ namespace PaymentAPI.Features
         [Xunit.SkippableFactAttribute(DisplayName="Add a Schedule with an Invalid Schedule Reference")]
         [Xunit.TraitAttribute("FeatureTitle", "CardNegativeValidation")]
         [Xunit.TraitAttribute("Description", "Add a Schedule with an Invalid Schedule Reference")]
-        [Xunit.TraitAttribute("Category", "wip")]
         public void AddAScheduleWithAnInvalidScheduleReference()
         {
-            string[] tagsOfScenario = new string[] {
-                    "wip"};
+            string[] tagsOfScenario = ((string[])(null));
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Add a Schedule with an Invalid Schedule Reference", null, tagsOfScenario, argumentsOfScenario, featureTags);
 #line 154

@@ -1,0 +1,14 @@
+{
+  "terminal_id":"BPQACONV",
+  "transaction_type":"card_preauthorization",
+  "reference":"--referencenumber--",
+  "payment":{
+    "surcharge_amount":"10",
+    "amount":1000
+  },
+  "card_information":{
+    "card_number":"4111111111111111",
+    "expiry_year":2019,
+    "expiry_month":3
+  }
+}

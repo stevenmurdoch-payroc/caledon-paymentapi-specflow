@@ -1,0 +1,15 @@
+{
+  "terminal_id": "BPQACONV",
+  "transaction_type": "card_sale",
+  "reference": "--referencenumber--",
+  "payment": {
+    "surcharge_amount":"20",
+    "amount": 100,
+    "dynamic_dba": "ABC CO 659857458856"
+  },
+  "card_information": {
+    "card_number": "4111111111111111",
+    "expiry_year": 2026,
+    "expiry_month": 3
+  }
+}

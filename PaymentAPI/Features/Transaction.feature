@@ -101,7 +101,7 @@
 	Scenario: Perform a Scheduled Transaction
 		
 		Given a "AddToken" transaction has been performed
-		And the user prepares the PAD API "Schedule" request      
+		And the user prepares the Payment API "Schedule" request      
 		When a POST request is performed
 		Then the response code will be response code '200'
 		
@@ -129,6 +129,6 @@
 		
 	Scenario: Perform a Add Token Transaction
 		
-		Given the user prepares the PAD API "AddToken" request       
+		Given the user prepares the Payment API "AddToken" request       
 		When a POST request is performed
 		Then the response code will be response code '200'

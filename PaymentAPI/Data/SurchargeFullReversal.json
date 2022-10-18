@@ -1,0 +1,8 @@
+{
+  "terminal_id":"BPQACONV",
+  "transaction_type":"card_authorization_reversal",
+  "reference":"--previousreferencenumber--",
+  "payment":{
+    "amount":0
+  }
+}

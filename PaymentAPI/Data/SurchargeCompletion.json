@@ -1,0 +1,9 @@
+{
+  "terminal_id":"BPQACONV",
+  "transaction_type":"card_completion",
+  "reference":"--referencenumber--",
+  "payment":{
+    "amount":1000,
+    "surcharge_amount":"10"
+  }
+}

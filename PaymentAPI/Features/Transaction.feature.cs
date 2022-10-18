@@ -584,7 +584,7 @@ namespace PaymentAPI.Features
   testRunner.Given("a \"AddToken\" transaction has been performed", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
 #line 104
-  testRunner.And("the user prepares the PAD API \"Schedule\" request", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+  testRunner.And("the user prepares the Payment API \"Schedule\" request", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
 #line 105
   testRunner.When("a POST request is performed", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
@@ -720,7 +720,7 @@ namespace PaymentAPI.Features
             {
                 this.ScenarioStart();
 #line 132
-  testRunner.Given("the user prepares the PAD API \"AddToken\" request", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+  testRunner.Given("the user prepares the Payment API \"AddToken\" request", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
 #line 133
   testRunner.When("a POST request is performed", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
