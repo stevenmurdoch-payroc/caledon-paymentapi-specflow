@@ -1,0 +1,14 @@
+{
+  "terminal_id":"BPQAINTC",
+  "transaction_type":"card_return",
+  "reference":"MC-Credit-Return",
+  "payment":{
+    "amount":1010,
+    "surcharge_amount":"10"
+  },
+  "card_information":{
+    "card_number":"5191811111111116",
+    "expiry_year":2019,
+    "expiry_month":3
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "terminal_id": "REWARD12",
+  "transaction_type": "card_sale",
+  "reference": "Visa-Credit-Sale-Surcharge",
+  "payment": {
+    "surcharge_amount":"150",
+    "amount": 15150,
+    "dynamic_dba": "ABC CO 659857458856"
+  },
+  "card_information": {
+    "card_number": "4501111111111135",
+    "expiry_year": 2019,
+    "expiry_month": 3
+  }
+}

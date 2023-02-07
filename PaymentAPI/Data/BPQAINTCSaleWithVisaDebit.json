@@ -1,0 +1,14 @@
+{
+  "terminal_id": "BPQAINTC",
+  "transaction_type": "card_sale",
+  "reference": "Visa-Debit-Sale",
+  "payment": {
+    "amount": 25000,
+    "dynamic_dba": "ABC CO 659857458856"
+  },
+  "card_information": {
+    "card_number": "4506440000000009",
+    "expiry_year": 2019,
+    "expiry_month": 3
+  }
+}

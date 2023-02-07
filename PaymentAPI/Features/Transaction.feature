@@ -4,7 +4,7 @@
 		
         Given the user prepares the Payment API "Sale" request       
         When a POST request is performed
-        Then the response code will be response code '200'
+	    Then the response code will be response code '200'
         
 	Scenario: Perform an Account Status Check
 		

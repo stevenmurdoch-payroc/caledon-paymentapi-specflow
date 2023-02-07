@@ -1,0 +1,14 @@
+{
+  "terminal_id": "BPQACONV",
+  "transaction_type": "card_sale",
+  "reference": "MC-Debit-Sale",
+  "payment": {
+    "amount": 20000,
+    "dynamic_dba": "ABC CO 659857458856"
+  },
+  "card_information": {
+    "card_number": "5510295555555554",
+    "expiry_year": 2019,
+    "expiry_month": 3
+  }
+}

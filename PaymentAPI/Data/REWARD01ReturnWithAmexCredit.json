@@ -1,0 +1,13 @@
+{
+  "terminal_id":"REWARD01",
+  "transaction_type":"card_return",
+  "reference":"Amex-Return",
+  "payment":{
+    "amount":3000
+  },
+  "card_information":{
+    "card_number":"341111111111111",
+    "expiry_year":2019,
+    "expiry_month":3
+  }
+}

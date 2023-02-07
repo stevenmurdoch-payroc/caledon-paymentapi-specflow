@@ -1,0 +1,14 @@
+{
+  "terminal_id":"BPQADISC",
+  "transaction_type":"card_return",
+  "reference":"Visa-Credit-Return",
+  "payment":{
+    "amount":5050,
+    "surcharge_amount":"50"
+  },
+  "card_information":{
+    "card_number":"4501111111111135",
+    "expiry_year":2019,
+    "expiry_month":3
+  }
+}
