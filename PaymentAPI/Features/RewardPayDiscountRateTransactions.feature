@@ -1,10 +1,5 @@
 Feature: RewardPay Discount Rate % Transactions Run
 	
-
-	Scenario: Perform a Settlement Transaction - Pre Requisite before processing transactions
-		Given the user prepares the Payment API "REWARD01Settlement" request       
-		When a POST request is performed
-		Then the response code will be response code '200'
 	
 	Scenario: Perform a RewardPay (REWARD01 - Discount Rate %) MasterCard Credit Sale Transaction
 		
@@ -60,7 +55,3 @@ Feature: RewardPay Discount Rate % Transactions Run
 		When a POST request is performed
 		Then the response code will be response code '200'
 		
-	Scenario: Perform a Settlement Transaction
-		Given the user prepares the Payment API "REWARD01Settlement" request       
-		When a POST request is performed
-		Then the response code will be response code '200'

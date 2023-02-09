@@ -19,7 +19,7 @@
 		When a POST request is performed
 		Then the response code will be response code '200'
 
-		
+		 
 	Scenario: Perform a Authorization Only Transaction
 	
 		Given the user prepares the Payment API "AuthorizationOnly" request       

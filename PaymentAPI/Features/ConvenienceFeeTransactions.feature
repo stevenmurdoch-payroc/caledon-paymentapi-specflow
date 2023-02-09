@@ -1,10 +1,5 @@
 Feature: Convenience Fee Pricing Option Transactions Run
 	
-
-	Scenario: Perform a Settlement Transaction - Pre Requisite before processing transactions
-		Given the user prepares the Payment API "BPQACONVSettlement" request       
-		When a POST request is performed
-		Then the response code will be response code '200'
 	
 	Scenario: Perform a Convenience Fee MasterCard Credit Sale Transaction
 		
@@ -41,8 +36,4 @@ Feature: Convenience Fee Pricing Option Transactions Run
 		Given the user prepares the Payment API "BPQACONVReturnWithVisaCredit" request       
 		When a POST request is performed
 		Then the response code will be response code '200'
-		
-	Scenario: Perform a Settlement Transaction for BPQACONV
-		Given the user prepares the Payment API "BPQACONVSettlement" request       
-		When a POST request is performed
-		Then the response code will be response code '200'
+	

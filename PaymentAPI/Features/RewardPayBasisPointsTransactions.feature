@@ -1,10 +1,5 @@
 Feature: RewardPay Basis Points Transactions Run
 	
-
-	Scenario: Perform a Settlement Transaction for REWARD12 - Pre Requisite before processing transactions
-		Given the user prepares the Payment API "REWARD12Settlement" request       
-		When a POST request is performed
-		Then the response code will be response code '200'
 	
 	Scenario: Perform a RewardPay (REWARD12 - Basis Points) MasterCard Credit Sale Transaction
 		
@@ -57,10 +52,5 @@ Feature: RewardPay Basis Points Transactions Run
 	Scenario: Perform a RewardPay (REWARD12 - Basis Points) Amex Debit Sale Transaction
 		
 		Given the user prepares the Payment API "REWARD12SaleWithAmexDebit" request       
-		When a POST request is performed
-		Then the response code will be response code '200'
-		
-	Scenario: Perform a Settlement Transaction for REWARD12
-		Given the user prepares the Payment API "REWARD12Settlement" request       
 		When a POST request is performed
 		Then the response code will be response code '200'

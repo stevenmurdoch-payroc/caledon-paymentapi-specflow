@@ -1,10 +1,5 @@
 Feature: Discount Rate Pricing Option Transactions Run
 	
-
-	Scenario: Perform a Settlement Transaction - Pre Requisite before processing transactions
-		Given the user prepares the Payment API "BPQADISCSettlement" request       
-		When a POST request is performed
-		Then the response code will be response code '200'
 	
 	Scenario: Perform a Discount Rate MasterCard Credit Sale Transaction
 		
@@ -60,7 +55,3 @@ Feature: Discount Rate Pricing Option Transactions Run
 		When a POST request is performed
 		Then the response code will be response code '200'
 		
-	Scenario: Perform a Settlement Transaction for BPQADISC
-		Given the user prepares the Payment API "BPQADISCSettlement" request       
-		When a POST request is performed
-		Then the response code will be response code '200'

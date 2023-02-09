@@ -38,9 +38,6 @@
 
     <ItemGroup>
       <None Remove="local.runsettings.json" />
-      <Content Include="local.runsettings.json">
-        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-      </Content>
     </ItemGroup>
 
 </Project>
