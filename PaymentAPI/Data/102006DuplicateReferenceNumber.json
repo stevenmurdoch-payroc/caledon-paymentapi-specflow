@@ -1,0 +1,14 @@
+{
+  "terminal_id":"BPQATEST",
+  "client_id":"client-id",
+  "transaction_type":"pad_debit",
+  "charge_description":"DEBIT-DESC",
+  "reference_number":"--referencenumber--",
+  "amount":1060,
+  "bank_number":"001",
+  "branch_number":"12345",
+  "account_number":"1234567",
+  "merchant_bank_number":"001",
+  "merchant_branch_number":"00123",
+  "merchant_account_number":"1234567"
+}
