@@ -99,7 +99,7 @@ namespace PaymentAPI.Features
             {
                 this.ScenarioStart();
 #line 6
-  testRunner.Given("the user prepares the API \"102001InvalidAmount\" request", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+  testRunner.Given("the user prepares the API \"ErrorCodes/102001InvalidAmount\" request", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
 #line 7
   testRunner.When("a POST request is performed", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
@@ -133,7 +133,7 @@ namespace PaymentAPI.Features
             {
                 this.ScenarioStart();
 #line 13
-  testRunner.Given("the user prepares the API \"102002InvalidClientId\" request", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+  testRunner.Given("the user prepares the API \"ErrorCodes/102002InvalidClientId\" request", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
 #line 14
   testRunner.When("a POST request is performed", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
@@ -167,7 +167,8 @@ namespace PaymentAPI.Features
             {
                 this.ScenarioStart();
 #line 20
-  testRunner.Given("the user prepares the API \"102003InvalidClientBankTransitNumber\" request", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+  testRunner.Given("the user prepares the API \"ErrorCodes/102003InvalidClientBankTransitNumber\" reque" +
+                        "st", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
 #line 21
   testRunner.When("a POST request is performed", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
@@ -201,7 +202,8 @@ namespace PaymentAPI.Features
             {
                 this.ScenarioStart();
 #line 27
-  testRunner.Given("the user prepares the API \"102004InvalidClientBankAccountNumber\" request", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+  testRunner.Given("the user prepares the API \"ErrorCodes/102004InvalidClientBankAccountNumber\" reque" +
+                        "st", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
 #line 28
   testRunner.When("a POST request is performed", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
@@ -235,7 +237,7 @@ namespace PaymentAPI.Features
             {
                 this.ScenarioStart();
 #line 34
-  testRunner.Given("the user prepares the API \"102005InvalidReferenceNumber\" request", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+  testRunner.Given("the user prepares the API \"ErrorCodes/102005InvalidReferenceNumber\" request", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
 #line 35
   testRunner.When("a POST request is performed", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
@@ -269,7 +271,7 @@ namespace PaymentAPI.Features
             {
                 this.ScenarioStart();
 #line 41
-  testRunner.Given("the user prepares the API \"102006DuplicateReferenceNumber\" request", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+  testRunner.Given("the user prepares the API \"ErrorCodes/102006DuplicateReferenceNumber\" request", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
 #line 42
   testRunner.When("a POST request is performed", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
@@ -303,7 +305,7 @@ namespace PaymentAPI.Features
             {
                 this.ScenarioStart();
 #line 48
-  testRunner.Given("the user prepares the API \"102007InvalidClientId\" request", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+  testRunner.Given("the user prepares the API \"ErrorCodes/102007InvalidClientId\" request", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
 #line 49
   testRunner.When("a POST request is performed", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
@@ -337,7 +339,7 @@ namespace PaymentAPI.Features
             {
                 this.ScenarioStart();
 #line 55
-  testRunner.Given("the user prepares the API \"102008InvalidEffectiveDate\" request", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+  testRunner.Given("the user prepares the API \"ErrorCodes/102008InvalidEffectiveDate\" request", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
 #line 56
   testRunner.When("a POST request is performed", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
@@ -371,7 +373,7 @@ namespace PaymentAPI.Features
             {
                 this.ScenarioStart();
 #line 62
-  testRunner.Given("the user prepares the API \"102009RefundNoMatch\" request", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+  testRunner.Given("the user prepares the API \"ErrorCodes/102009RefundNoMatch\" request", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
 #line 63
   testRunner.When("a POST request is performed", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
@@ -405,7 +407,7 @@ namespace PaymentAPI.Features
             {
                 this.ScenarioStart();
 #line 69
-  testRunner.Given("the user prepares the API \"102010AmountExceedsRiskThreshold\" request", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+  testRunner.Given("the user prepares the API \"ErrorCodes/102010AmountExceedsRiskThreshold\" request", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
 #line 70
   testRunner.When("a POST request is performed", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
@@ -439,7 +441,7 @@ namespace PaymentAPI.Features
             {
                 this.ScenarioStart();
 #line 76
-  testRunner.Given("the user prepares the API \"102016MTDCountExceedsLimit\" request", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+  testRunner.Given("the user prepares the API \"ErrorCodes/102016MTDCountExceedsLimit\" request", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
 #line 77
   testRunner.When("a POST request is performed", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
@@ -473,7 +475,7 @@ namespace PaymentAPI.Features
             {
                 this.ScenarioStart();
 #line 83
-  testRunner.Given("the user prepares the API \"102017MTDAmountExceedsLimit\" request", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+  testRunner.Given("the user prepares the API \"ErrorCodes/102017MTDAmountExceedsLimit\" request", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
 #line 84
   testRunner.When("a POST request is performed", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");

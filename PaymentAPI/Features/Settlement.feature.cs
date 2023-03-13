@@ -102,7 +102,7 @@ namespace PaymentAPI.Features
             {
                 this.ScenarioStart();
 #line 4
-  testRunner.Given("the user prepares the Payment API \"REWARD01Settlement\" request", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+  testRunner.Given("the user prepares the Payment API \"REWARD01/REWARD01Settlement\" request", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
 #line 5
   testRunner.When("a POST request is performed", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
@@ -136,7 +136,7 @@ namespace PaymentAPI.Features
             {
                 this.ScenarioStart();
 #line 9
-  testRunner.Given("the user prepares the Payment API \"REWARD12Settlement\" request", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+  testRunner.Given("the user prepares the Payment API \"REWARD12/REWARD12Settlement\" request", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
 #line 10
   testRunner.When("a POST request is performed", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
@@ -170,7 +170,7 @@ namespace PaymentAPI.Features
             {
                 this.ScenarioStart();
 #line 14
-  testRunner.Given("the user prepares the Payment API \"BPQAINTCSettlement\" request", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+  testRunner.Given("the user prepares the Payment API \"BPQAINTC/BPQAINTCSettlement\" request", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
 #line 15
   testRunner.When("a POST request is performed", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
@@ -204,7 +204,7 @@ namespace PaymentAPI.Features
             {
                 this.ScenarioStart();
 #line 19
-  testRunner.Given("the user prepares the Payment API \"BPQADISCSettlement\" request", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+  testRunner.Given("the user prepares the Payment API \"BPQADISC/BPQADISCSettlement\" request", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
 #line 20
   testRunner.When("a POST request is performed", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
@@ -238,7 +238,7 @@ namespace PaymentAPI.Features
             {
                 this.ScenarioStart();
 #line 24
-  testRunner.Given("the user prepares the Payment API \"BPQACONVSettlement\" request", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+  testRunner.Given("the user prepares the Payment API \"BPQACONV/BPQACONVSettlement\" request", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
 #line 25
   testRunner.When("a POST request is performed", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
