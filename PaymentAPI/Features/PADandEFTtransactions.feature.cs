@@ -176,14 +176,14 @@ namespace PaymentAPI.Features
             this.ScenarioCleanup();
         }
         
-        [Xunit.SkippableFactAttribute(DisplayName="Perform an EFT Transaction  (Unique Reference Number Required)")]
+        [Xunit.SkippableFactAttribute(DisplayName="Perform a Deactivate/Reactivate Token Transaction")]
         [Xunit.TraitAttribute("FeatureTitle", "Perform PAD/EFT Transactions")]
-        [Xunit.TraitAttribute("Description", "Perform an EFT Transaction  (Unique Reference Number Required)")]
-        public void PerformAnEFTTransactionUniqueReferenceNumberRequired()
+        [Xunit.TraitAttribute("Description", "Perform a Deactivate/Reactivate Token Transaction")]
+        public void PerformADeactivateReactivateTokenTransaction()
         {
             string[] tagsOfScenario = ((string[])(null));
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Perform an EFT Transaction  (Unique Reference Number Required)", null, tagsOfScenario, argumentsOfScenario, featureTags);
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Perform a Deactivate/Reactivate Token Transaction", null, tagsOfScenario, argumentsOfScenario, featureTags);
 #line 22
  this.ScenarioInitialize(scenarioInfo);
 #line hidden
@@ -195,106 +195,21 @@ namespace PaymentAPI.Features
             {
                 this.ScenarioStart();
 #line 24
-  testRunner.Given("the user prepares the API \"EFTPayment\" request", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
-#line hidden
-#line 25
-  testRunner.When("a POST request is performed", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
-#line hidden
-#line 26
-  testRunner.Then("the response code will be response code \'202\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
-#line hidden
-            }
-            this.ScenarioCleanup();
-        }
-        
-        [Xunit.SkippableFactAttribute(DisplayName="Perform an PAD Refund Transaction (PAD Settlement cannot be done as a post reques" +
-            "t)")]
-        [Xunit.TraitAttribute("FeatureTitle", "Perform PAD/EFT Transactions")]
-        [Xunit.TraitAttribute("Description", "Perform an PAD Refund Transaction (PAD Settlement cannot be done as a post reques" +
-            "t)")]
-        [Xunit.TraitAttribute("Category", "wip")]
-        public void PerformAnPADRefundTransactionPADSettlementCannotBeDoneAsAPostRequest()
-        {
-            string[] tagsOfScenario = new string[] {
-                    "wip"};
-            System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Perform an PAD Refund Transaction (PAD Settlement cannot be done as a post reques" +
-                    "t)", null, tagsOfScenario, argumentsOfScenario, featureTags);
-#line 29
-  this.ScenarioInitialize(scenarioInfo);
-#line hidden
-            if ((TagHelper.ContainsIgnoreTag(tagsOfScenario) || TagHelper.ContainsIgnoreTag(featureTags)))
-            {
-                testRunner.SkipScenario();
-            }
-            else
-            {
-                this.ScenarioStart();
-            }
-            this.ScenarioCleanup();
-        }
-        
-        [Xunit.SkippableFactAttribute(DisplayName="Perform an PAD Refund Void Transaction (PAD Settlement cannot be done as a post r" +
-            "equest)")]
-        [Xunit.TraitAttribute("FeatureTitle", "Perform PAD/EFT Transactions")]
-        [Xunit.TraitAttribute("Description", "Perform an PAD Refund Void Transaction (PAD Settlement cannot be done as a post r" +
-            "equest)")]
-        [Xunit.TraitAttribute("Category", "wip")]
-        public void PerformAnPADRefundVoidTransactionPADSettlementCannotBeDoneAsAPostRequest()
-        {
-            string[] tagsOfScenario = new string[] {
-                    "wip"};
-            System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Perform an PAD Refund Void Transaction (PAD Settlement cannot be done as a post r" +
-                    "equest)", null, tagsOfScenario, argumentsOfScenario, featureTags);
-#line 33
-   this.ScenarioInitialize(scenarioInfo);
-#line hidden
-            if ((TagHelper.ContainsIgnoreTag(tagsOfScenario) || TagHelper.ContainsIgnoreTag(featureTags)))
-            {
-                testRunner.SkipScenario();
-            }
-            else
-            {
-                this.ScenarioStart();
-            }
-            this.ScenarioCleanup();
-        }
-        
-        [Xunit.SkippableFactAttribute(DisplayName="Perform a Deactivate/Reactivate Token Transaction")]
-        [Xunit.TraitAttribute("FeatureTitle", "Perform PAD/EFT Transactions")]
-        [Xunit.TraitAttribute("Description", "Perform a Deactivate/Reactivate Token Transaction")]
-        public void PerformADeactivateReactivateTokenTransaction()
-        {
-            string[] tagsOfScenario = ((string[])(null));
-            System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Perform a Deactivate/Reactivate Token Transaction", null, tagsOfScenario, argumentsOfScenario, featureTags);
-#line 36
- this.ScenarioInitialize(scenarioInfo);
-#line hidden
-            if ((TagHelper.ContainsIgnoreTag(tagsOfScenario) || TagHelper.ContainsIgnoreTag(featureTags)))
-            {
-                testRunner.SkipScenario();
-            }
-            else
-            {
-                this.ScenarioStart();
-#line 38
   testRunner.Given("a \"PADDeactivate\" transaction has been performed", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
-#line 39
+#line 25
   testRunner.And("a \"PADDebitTokenReDeActivated\" transaction has been performed", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
-#line 40
+#line 26
   testRunner.Then("the response code will be response code \'400\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
-#line 41
+#line 27
   testRunner.Given("a \"PADReactivate\" transaction has been performed", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
-#line 42
+#line 28
   testRunner.And("the user prepares the API \"PADDebitTokenReDeActivated\" request", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
-#line 43
+#line 29
   testRunner.Then("the response code will be response code \'200\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             }
@@ -309,7 +224,7 @@ namespace PaymentAPI.Features
             string[] tagsOfScenario = ((string[])(null));
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Perform a Add PAD Token Transaction", null, tagsOfScenario, argumentsOfScenario, featureTags);
-#line 46
+#line 32
  this.ScenarioInitialize(scenarioInfo);
 #line hidden
             if ((TagHelper.ContainsIgnoreTag(tagsOfScenario) || TagHelper.ContainsIgnoreTag(featureTags)))
@@ -319,13 +234,13 @@ namespace PaymentAPI.Features
             else
             {
                 this.ScenarioStart();
-#line 48
+#line 34
   testRunner.Given("the user prepares the API \"PADAddToken\" request", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
-#line 49
+#line 35
   testRunner.When("a POST request is performed", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
-#line 50
+#line 36
   testRunner.Then("the response code will be response code \'200\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             }

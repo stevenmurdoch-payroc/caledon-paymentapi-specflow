@@ -18,21 +18,7 @@
 		Given the user prepares the API "PADAccountVerification" request       
 		When a POST request is performed
 		Then the response code will be response code '202'
-		
-	Scenario: Perform an EFT Transaction  (Unique Reference Number Required)
-		
-		Given the user prepares the API "EFTPayment" request       
-		When a POST request is performed
-		Then the response code will be response code '202'
-		
-	@wip 
-		Scenario: Perform an PAD Refund Transaction (PAD Settlement cannot be done as a post request)
-		
-		
-	@wip 
-			Scenario: Perform an PAD Refund Void Transaction (PAD Settlement cannot be done as a post request)
-	
-	
+			
 	Scenario: Perform a Deactivate/Reactivate Token Transaction
 			
 		Given a "PADDeactivate" transaction has been performed

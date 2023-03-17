@@ -1,8 +1,8 @@
 {
-  "terminal_id":"BPQATEST",
-  "transaction_type":"card_void",
-  "reference":"SpecFlowSale1",
-  "payment":{
-    "amount":200
+  "terminal_id": "BPQATEST",
+  "transaction_type": "card_void",
+  "reference": "--previousreferencenumber--",
+  "payment": {
+    "amount": 200
   }
 }

@@ -40,4 +40,11 @@
       <None Remove="local.runsettings.json" />
     </ItemGroup>
 
+    <ItemGroup>
+      <None Remove="local.runsettings" />
+      <Content Include="local.runsettings">
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      </Content>
+    </ItemGroup>
+
 </Project>

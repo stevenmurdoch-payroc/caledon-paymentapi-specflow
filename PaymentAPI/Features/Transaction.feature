@@ -101,7 +101,7 @@
 	Scenario: Perform a Scheduled Transaction
 		
 		Given a "AddToken" transaction has been performed
-		And the user prepares the Payment API "Schedule" request      
+		And the user prepares the API "Schedule" request     
 		When a POST request is performed
 		Then the response code will be response code '200'
 		
@@ -115,7 +115,7 @@
 	Scenario: Perform a Void Transaction
 		
 		Given a "Sale" transaction has been performed
-		And the user prepares the Payment API "Void" request       
+		And the user prepares the API "Void" request         
 		When a POST request is performed
 		Then the response code will be response code '200'
 		
@@ -128,7 +128,6 @@
 		Then the response code will be response code '200'
 		
 	Scenario: Perform a Add Token Transaction
-		
-		Given the user prepares the Payment API "AddToken" request       
+		Given the user prepares the API "AddToken" request      
 		When a POST request is performed
 		Then the response code will be response code '200'
